@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, User, Download } from 'lucide-react';
+import cvFile from '../assets/CV.pdf';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,10 +37,14 @@ const Header: React.FC = () => {
           </nav>
 
           {/* CV Download Button */}
-          <button className="hidden md:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200">
+          <a
+            href={cvFile}
+            download="CV.pdf"
+            className="hidden md:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
+          >
             <Download className="h-4 w-4" />
             Télécharger CV
-          </button>
+          </a>
 
           {/* Mobile menu button */}
           <button

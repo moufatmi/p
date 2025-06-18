@@ -1,5 +1,6 @@
 import React from 'react';
 import { User, Phone, Mail, MapPin, Linkedin, Download } from 'lucide-react';
+import cvFile from '../assets/CV.pdf';
 
 const Footer: React.FC = () => {
   const quickLinks = [
@@ -69,10 +70,14 @@ const Footer: React.FC = () => {
               Téléchargez mon CV complet au format PDF pour découvrir 
               l'ensemble de mon parcours professionnel.
             </p>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 flex items-center gap-2">
+            <a
+              href={cvFile}
+              download="CV.pdf"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 flex items-center gap-2"
+            >
               <Download className="h-4 w-4" />
               Télécharger CV
-            </button>
+            </a>
           </div>
         </div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Linkedin, Download } from 'lucide-react';
 import profileImg from '../assets/profile 2.jpg';
+import cvFile from '../assets/CV.pdf';
 
 const Hero: React.FC = () => {
   return (
@@ -51,10 +52,14 @@ const Hero: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2">
+              <a
+                href={cvFile}
+                download="CV.pdf"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2"
+              >
                 <Download className="h-5 w-5" />
                 Télécharger mon CV
-              </button>
+              </a>
               <a
                 href="https://www.facebook.com/moussabfatmi"
                 target="_blank"
