@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               <span className="text-2xl font-bold">Moussab Fatmi</span>
             </div>
             <p className="text-gray-300 text-sm">
-              Conseillère en voyages passionnée avec 8+ années d'expérience. 
+              Conseillère en voyages passionnée avec 3 années d'expérience. 
               À la recherche de nouvelles opportunités dans une agence prestigieuse.
             </p>
             <div className="space-y-2 text-sm">
