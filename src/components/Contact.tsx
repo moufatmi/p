@@ -1,3 +1,4 @@
+import emailjs from 'emailjs-com';
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Linkedin, Download, Send, CheckCircle } from 'lucide-react';
 
@@ -11,19 +12,29 @@ const Contact: React.FC = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        position: '',
-        message: ''
-      });
-    }, 3000);
+    emailjs.sendForm(
+      'service_j80dlzu',      // Replace with your actual Service ID from EmailJS
+      'template_bkt4hai',     // Replace with your actual Template ID from EmailJS
+      e.target as HTMLFormElement,
+      'YycjRTrOxh-1OAczE' // Replace with your actual User ID or Public Key from EmailJS
+    )
+    .then((result) => {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            position: '',
+            message: ''
+          });
+        }, 3000);
+    }, (error) => {
+        alert('Erreur lors de l\'envoi du message. Veuillez réessayer.');
+    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

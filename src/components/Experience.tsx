@@ -53,52 +53,52 @@ const Experience: React.FC = () => {
           </h2>
         </div>
 
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-200 hidden md:block"></div>
-
-          <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <div key={index} className="relative flex items-start gap-8">
-                {/* Timeline dot */}
-                <div className="hidden md:flex items-center justify-center w-16 h-16 bg-blue-600 rounded-full shadow-lg relative z-10">
-                  <exp.icon className="h-8 w-8 text-white" />
-                </div>
-
-                {/* Content */}
-                <div className="flex-1 bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-1">
-                        {exp.position}
-                      </h3>
-                      <p className="text-lg text-blue-600 font-semibold mb-2">
-                        {exp.company}
-                      </p>
-                      <div className="flex items-center gap-4 text-gray-500 text-sm">
-                        <div className="flex items-center gap-1">
-                          <Calendar className="h-4 w-4" />
-                          {exp.period}
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <MapPin className="h-4 w-4" />
-                          {exp.location}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    {exp.achievements.map((achievement, idx) => (
-                      <div key={idx} className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-gray-700">{achievement}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
+        <div className="relative mb-12">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">🔹 Expérience Professionnelle Complète :</h3>
+          <div className="space-y-8">
+            {/* Beausejour Voyage Agent & Support */}
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <h4 className="text-xl font-semibold mb-1">🔸 Agent de voyage & Support technique – Beausejour Voyage</h4>
+              <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 2023</div>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                <li>Accueil et accompagnement des clients dans le choix de leurs destinations et services touristiques.</li>
+                <li>Création de programmes de voyage sur mesure, réservation de vols, hébergements et activités.</li>
+                <li>Gestion des dossiers clients, suivi personnalisé et assistance avant et pendant le voyage.</li>
+                <li>💻 Responsable du support technique interne : assistance aux agents de voyage en cas de problèmes techniques liés aux logiciels, imprimantes, ou outils de réservation.</li>
+                <li>Participation à l'amélioration des processus digitaux au sein de l'agence.</li>
+              </ul>
+            </div>
+            {/* Beausejour Voyage Web Dev */}
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <h4 className="text-xl font-semibold mb-1">🔸 Développeur Web – Projet interne Beausejour Voyage</h4>
+              <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 2024</div>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                <li>Conception et développement d'un système web dédié à la gestion et au suivi des factures des clients pour les agents de voyage.</li>
+                <li>Réalisation d'une interface intuitive permettant l'enregistrement, la consultation et le classement efficace des factures quotidiennes.</li>
+                <li>Utilisation des technologies HTML, CSS, JavaScript, et PHP/MySQL pour offrir une solution complète et adaptée aux besoins spécifiques de l'agence.</li>
+                <li>Amélioration de la productivité administrative grâce à l'automatisation de tâches répétitives.</li>
+              </ul>
+            </div>
+            {/* Assistant administratif */}
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <h4 className="text-xl font-semibold mb-1">🔸 Assistant administratif – Entreprise d'importation et distribution de bois</h4>
+              <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 Été 2020 (5 mois)</div>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                <li>Organisation et classement des factures papier et numériques.</li>
+                <li>Saisie des données financières dans Excel pour le suivi des opérations.</li>
+                <li>Soutien administratif général pour faciliter la gestion quotidienne.</li>
+              </ul>
+            </div>
+            {/* Technicien vendeur */}
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <h4 className="text-xl font-semibold mb-1">🔸 Technicien vendeur – Magasin de réparation et vente d'appareils électroniques</h4>
+              <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 2018 (1 an)</div>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+                <li>Réparation et maintenance d'ordinateurs et téléphones mobiles.</li>
+                <li>Conseil et vente d'équipements électroniques aux clients.</li>
+                <li>Gestion des stocks et suivi des commandes.</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

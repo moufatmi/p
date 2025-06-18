@@ -12,19 +12,24 @@ import {
 
 const Skills: React.FC = () => {
   const technicalSkills = [
-    { name: 'Amadeus GDS', level: 95 },
-    { name: 'Sabre', level: 88 },
-    { name: 'Galileo', level: 85 },
-    { name: 'Microsoft Office', level: 92 },
-    { name: 'CRM Salesforce', level: 80 },
-    { name: 'Booking.com Partner', level: 90 }
+    { name: 'Amadeus NDC', level: 100 },
+    { name: 'Amadeus Cryptique', level: 80 },
+    { name: 'Création d\'applications web (HTML, CSS, JavaScript)', level: 100 },
+    { name: 'PHP & MySQL', level: 80 },
+    { name: 'Gestion de bases de données', level: 80 },
+    { name: 'Microsoft Excel (niveau avancé)', level: 90 },
+    { name: 'Support technique informatique (dépannage logiciels et matériels)', level: 85 },
+    { name: 'Connaissances en SEO et optimisation web', level: 70 },
+    { name: 'Outils de gestion de projet (Trello, Jira)', level: 60 }
   ];
 
   const languages = [
-    { name: 'Français', level: 'Natif', flag: '🇫🇷' },
-    { name: 'Anglais', level: 'Courant (C1)', flag: '🇬🇧' },
-    { name: 'Espagnol', level: 'Intermédiaire (B2)', flag: '🇪🇸' },
-    { name: 'Italien', level: 'Débutant (A2)', flag: '🇮🇹' }
+    { name: 'Français', level: 'B1', flag: '🇫🇷' },
+    { name: 'Anglais', level: 'C1', flag: '🇬🇧' },
+    { name: 'Espagnol', level: 'Je suis encore en train d\'apprendre', flag: '🇪🇸' },
+    { name: 'Russe', level: 'Je suis encore en train d\'apprendre', flag: '🇷🇺' },
+    { name: 'Japonais', level: 'Je suis encore en train d\'apprendre', flag: '🇯🇵' },
+    { name: 'Chinois', level: 'Je suis encore en train d\'apprendre', flag: '🇨🇳' }
   ];
 
   const softSkills = [
@@ -37,11 +42,9 @@ const Skills: React.FC = () => {
   ];
 
   const certifications = [
-    'IATA Travel Agent Certification',
-    'Amadeus Certified Professional',
-    'ATOUT FRANCE Formation Professionnelle',
-    'Certification Sécurité Voyage (WTTC)',
-    'Formation Continue Destinations Exotiques'
+    { name: 'SQL Certification (DataCamp)', link: 'https://drive.google.com/file/d/1gn7Peg1nLuhVJ-mKAYNBRyMXSj2gcrZP/view?usp=sharing' },
+    { name: 'Technical Support', link: 'https://drive.google.com/file/d/1LuzvO8DvZnPvS4FLCk2NtF-IyTVi9UiO/view?usp=sharing' },
+    { name: 'Ecommerce Website', link: 'https://drive.google.com/file/d/1O7CSMqh0KmYzkf-iNVR-uLjTtwb7BKn2/view?usp=sharing' }
   ];
 
   return (
@@ -129,7 +132,11 @@ const Skills: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {certifications.map((cert, index) => (
               <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                <span className="text-sm font-medium">{cert}</span>
+                {cert.link ? (
+                  <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-blue-200 underline hover:text-blue-100">{cert.name}</a>
+                ) : (
+                  <span className="text-sm font-medium">{cert.name}</span>
+                )}
               </div>
             ))}
           </div>

@@ -42,14 +42,8 @@ const Achievements: React.FC = () => {
 
   const testimonials = [
     {
-      text: "Sophie est une professionnelle exceptionnelle. Son attention aux détails et sa connaissance approfondie des destinations font d'elle une conseillère hors pair.",
-      author: "Marie Dubois",
-      position: "Directrice, Voyages Prestige International"
-    },
-    {
-      text: "Grâce à Sophie, notre département voyages d'affaires a connu une croissance remarquable. Sa capacité à gérer les clients exigeants est impressionnante.",
-      author: "Jean-Pierre Martin",
-      position: "Manager, Agence Évasion Monde"
+      text: "أشهد له بالكفاءة و القدرة على المساعدة و حل المشكلات التقنية",
+      author: "Yamna Fatmi"
     }
   ];
 
@@ -103,20 +97,19 @@ const Achievements: React.FC = () => {
             <h3 className="text-2xl font-semibold text-gray-900 mb-2">
               Recommandations Professionnelles
             </h3>
-            <p className="text-gray-600">Ce que disent mes anciens managers</p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 justify-end">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="relative">
-                <div className="bg-gray-50 rounded-xl p-6 relative">
-                  <div className="text-4xl text-blue-200 absolute top-2 left-4">"</div>
-                  <p className="text-gray-700 italic mb-4 relative z-10 pl-6">
+              <div key={index} className="relative md:col-start-2 md:justify-self-end">
+                <div className="bg-gray-50 rounded-xl p-6 relative text-right">
+                  <div className="text-4xl text-blue-200 absolute top-2 right-4">"</div>
+                  <p className="text-gray-700 italic mb-4 relative z-10 pr-6">
                     {testimonial.text}
                   </p>
                   <div className="border-t pt-4">
                     <div className="font-semibold text-gray-900">{testimonial.author}</div>
-                    <div className="text-sm text-gray-600">{testimonial.position}</div>
+                    <div className="text-sm text-gray-600">أستاذة جامعية بكلية الحقوق - جامعة محمد الأول</div>
                   </div>
                 </div>
               </div>
