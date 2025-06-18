@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-400 mb-4 md:mb-0">
-              <p>&copy; 2024 Moussab Fatmi. Portfolio professionnel.</p>
+              <p>&copy; 2025 Moussab Fatmi. Portfolio professionnel.</p>
             </div>
             <div className="text-sm text-gray-400 text-center md:text-right">
               <p>Disponible pour nouvelles opportunités</p>
