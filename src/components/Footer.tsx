@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <User className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold">Sophie Martin</span>
+              <span className="text-2xl font-bold">Moussab Fatmi</span>
             </div>
             <p className="text-gray-300 text-sm">
               Conseillère en voyages passionnée avec 8+ années d'expérience. 
@@ -28,19 +28,19 @@ const Footer: React.FC = () => {
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <span>+33 6 12 34 56 78</span>
+                <span>+212 6 98 57 02 82</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span>sophie.martin@email.com</span>
+                <span>moussabfatmi@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-blue-400" />
-                <span>Paris, France</span>
+                <span>Oujda, Morocco</span>
               </div>
               <div className="flex items-center gap-2">
                 <Linkedin className="h-4 w-4 text-blue-400" />
-                <span>linkedin.com/in/sophie-martin-travel</span>
+                <span>https://www.linkedin.com/in/moussabfatmi/</span>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-gray-400 mb-4 md:mb-0">
-              <p>&copy; 2024 Sophie Martin. Portfolio professionnel.</p>
+              <p>&copy; 2024 Moussab Fatmi. Portfolio professionnel.</p>
             </div>
             <div className="text-sm text-gray-400 text-center md:text-right">
               <p>Disponible pour nouvelles opportunités</p>

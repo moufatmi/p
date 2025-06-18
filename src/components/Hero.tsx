@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Linkedin, Download } from 'lucide-react';
+import profileImg from '../assets/profile 2.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -18,49 +19,33 @@ const Hero: React.FC = () => {
           <div>
             <div className="mb-6">
               <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                Agent de Voyage Professionnel
+                Agent de Voyage
               </span>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
-                Sophie <span className="text-blue-600">Martin</span>
+                Moussab <span className="text-blue-600">Fatmi</span>
               </h1>
               <p className="text-xl text-gray-600 mb-6">
-                Conseillère en voyages passionnée avec 8+ années d'expérience dans la création d'expériences de voyage exceptionnelles
+                Conseiller en voyages passionné avec 3 ans d'expérience dans la création d'expériences de voyage exceptionnelles. Désormais, je propose également des services spécialisés pour le Hajj et la Omra.
               </p>
-            </div>
-
-            {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-4 mb-8">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">8+</div>
-                <div className="text-sm text-gray-600">Années d'expérience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">1200+</div>
-                <div className="text-sm text-gray-600">Clients satisfaits</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">45+</div>
-                <div className="text-sm text-gray-600">Pays visités</div>
-              </div>
             </div>
 
             {/* Contact Info */}
             <div className="space-y-3 mb-8">
               <div className="flex items-center gap-3 text-gray-600">
                 <Phone className="h-5 w-5 text-blue-600" />
-                <span>+33 6 12 34 56 78</span>
+                <span>+212 6 98 57 02 82</span>
               </div>
               <div className="flex items-center gap-3 text-gray-600">
                 <Mail className="h-5 w-5 text-blue-600" />
-                <span>sophie.martin@email.com</span>
+                <span>moussabfatmi@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-gray-600">
                 <MapPin className="h-5 w-5 text-blue-600" />
-                <span>Paris, France</span>
+                <span>Oujda, Morocco</span>
               </div>
               <div className="flex items-center gap-3 text-gray-600">
                 <Linkedin className="h-5 w-5 text-blue-600" />
-                <span>linkedin.com/in/sophie-martin-travel</span>
+                <span>https://www.linkedin.com/in/moussabfatmi/</span>
               </div>
             </div>
 
@@ -70,9 +55,14 @@ const Hero: React.FC = () => {
                 <Download className="h-5 w-5" />
                 Télécharger mon CV
               </button>
-              <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200">
+              <a
+                href="https://www.facebook.com/moussabfatmi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center"
+              >
                 Me contacter
-              </button>
+              </a>
             </div>
           </div>
 
@@ -81,8 +71,8 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="w-80 h-80 mx-auto rounded-full overflow-hidden shadow-2xl border-8 border-white">
                 <img
-                  src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Sophie Martin - Travel Agent"
+                  src={profileImg}
+                  alt="Moussab Fatmi - Travel Agent"
                   className="w-full h-full object-cover"
                 />
               </div>

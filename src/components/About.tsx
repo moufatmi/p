@@ -1,5 +1,7 @@
 import React from 'react';
 import { Award, Globe, Heart, Target } from 'lucide-react';
+import profileImg from '../assets/profile 2.jpg';
+import dashboardImg from '../assets/dashboard.jpg';
 
 const About: React.FC = () => {
   const qualities = [
@@ -43,47 +45,19 @@ const About: React.FC = () => {
               Mon Parcours Professionnel
             </h3>
             <div className="space-y-4 text-gray-600">
-              <p>
-                Diplômée en Tourisme et Hôtellerie de l'Université Paris-Sorbonne, j'ai débuté ma carrière 
-                il y a 8 ans avec une passion dévorante pour la découverte du monde et le service client.
-              </p>
-              <p>
-                Au fil des années, j'ai développé une expertise particulière dans l'organisation de voyages 
-                sur mesure, les destinations exotiques et les voyages d'affaires. Ma connaissance approfondie 
-                des cultures locales et des meilleures pratiques de l'industrie me permet de créer des 
-                expériences vraiment exceptionnelles.
-              </p>
-              <p>
-                Mon objectif est de rejoindre une agence de voyage prestigieuse où je pourrai mettre à profit 
-                mon expérience et ma passion pour offrir un service d'excellence à une clientèle exigeante.
-              </p>
+              <p>Salut ! Moi c'est Moussab Fatmi — un passionné de tech, de voyage et d'innovation.</p>
+              <p>Depuis mon enfance, je suis fasciné par le monde du digital. J'aime créer des solutions simples à des problèmes réels. Récemment, j'ai conçu une plateforme web dédiée aux agences de voyage, pour faciliter la gestion des factures au quotidien — un projet né de mon expérience directe dans le secteur.</p>
+              <p>En parallèle, je poursuis mes études en Droit civil à l'université, tout en continuant à explorer le monde du code, du design web et de la stratégie digitale. Mon super-pouvoir ? Savoir comment attirer les touristes et les aider à découvrir des lieux incroyables, à travers une approche créative et ciblée.</p>
+              <p>Je suis toujours prêt à relever de nouveaux défis, apprendre, collaborer, et construire des choses qui comptent.</p>
             </div>
           </div>
-
-          <div className="relative">
+          <div>
             <img
-              src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Travel planning"
-              className="rounded-2xl shadow-lg"
+              src={dashboardImg}
+              alt="Dashboard screenshot"
+              className="rounded-2xl shadow-lg w-full max-w-[800px] h-auto"
             />
-            <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold">8+</div>
-              <div className="text-sm">Années d'expérience</div>
-            </div>
           </div>
-        </div>
-
-        {/* Qualities Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {qualities.map((quality, index) => (
-            <div key={index} className="text-center group">
-              <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 group-hover:bg-blue-600 transition-colors duration-300">
-                <quality.icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors duration-300" />
-              </div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2">{quality.title}</h4>
-              <p className="text-gray-600 text-sm">{quality.description}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

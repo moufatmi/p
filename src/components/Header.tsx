@@ -19,7 +19,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <User className="h-8 w-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">Sophie Martin</span>
+            <span className="text-2xl font-bold text-gray-900">Moussab Fatmi</span>
           </div>
 
           {/* Desktop Navigation */}

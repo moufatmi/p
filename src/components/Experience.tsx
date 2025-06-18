@@ -51,9 +51,6 @@ const Experience: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Expérience Professionnelle
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Un parcours riche et progressif dans l'industrie du voyage
-          </p>
         </div>
 
         <div className="relative">

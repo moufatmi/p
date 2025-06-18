@@ -37,25 +37,25 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Téléphone',
-      details: '+33 6 12 34 56 78',
+      details: '+212 6 98 57 02 82',
       subtext: 'Disponible 9h-18h'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: 'sophie.martin@email.com',
+      details: 'moussabfatmi@gmail.com',
       subtext: 'Réponse sous 24h'
     },
     {
       icon: MapPin,
       title: 'Localisation',
-      details: 'Paris, France',
+      details: 'Oujda, Morocco',
       subtext: 'Mobilité nationale'
     },
     {
       icon: Linkedin,
       title: 'LinkedIn',
-      details: 'sophie-martin-travel',
+      details: 'https://www.linkedin.com/in/moussabfatmi/',
       subtext: 'Profil professionnel'
     }
   ];
