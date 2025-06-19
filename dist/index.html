@@ -1,20 +1,95 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
   <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72'><text y='60' font-size='60'>✈️</text></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="https://moussabfatmi.me/assets/profile%202-C8kuB0hb.jpg" as="image" />
+    <link rel="preload" href="https://moussabfatmi.me/assets/CV-CwXY3YcI.pdf" as="document" type="application/pdf" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Favicon and App Icons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72'><text y='60' font-size='60'>✈️</text></svg>" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="https://moussabfatmi.me/site.webmanifest" />
+    
+    <!-- Primary Meta Tags -->
     <title>Moussab Fatmi - Conseillère en Voyages | Portfolio Professionnel</title>
+    <meta name="title" content="Moussab Fatmi - Conseillère en Voyages | Portfolio Professionnel" />
     <meta name="description" content="Portfolio professionnel de Moussab Fatmi, conseillère en voyages avec 8+ années d'expérience. Expertise en voyages sur mesure, destinations internationales et service client d'excellence." />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Moussab Fatmi" />
+    <meta name="keywords" content="conseiller voyage, voyage sur mesure, agence voyage, tourisme, destinations internationales, planification voyage, conseillère en voyages professionnelle" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://moussabfatmi.me" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://moussabfatmi.me" />
+    <meta property="og:title" content="Moussab Fatmi - Conseillère en Voyages | Portfolio Professionnel" />
+    <meta property="og:description" content="Portfolio professionnel de Moussab Fatmi, conseillère en voyages avec 8+ années d'expérience. Expertise en voyages sur mesure, destinations internationales et service client d'excellence." />
+    <meta property="og:image" content="https://moussabfatmi.me/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Photo de Moussab Fatmi - Conseillère en voyages" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Moussab Fatmi Portfolio" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://moussabfatmi.me" />
+    <meta name="twitter:title" content="Moussab Fatmi - Conseillère en Voyages | Portfolio" />
+    <meta name="twitter:description" content="Portfolio professionnel de Moussab Fatmi, conseillère en voyages avec 8+ années d'expérience." />
+    <meta name="twitter:image" content="https://moussabfatmi.me/twitter-card.jpg" />
+    <meta name="twitter:image:alt" content="Photo de Moussab Fatmi - Conseillère en voyages" />
+    
+    <!-- Theme Color and Mobile -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' 'unsafe-eval';" />
+    
+    <!-- Critical CSS -->
     <style>
       html {
         scroll-behavior: smooth;
       }
+      /* Prevent FOUC (Flash of Unstyled Content) */
+      body {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      body.loaded {
+        opacity: 1;
+      }
     </style>
-    <script type="module" crossorigin src="/assets/index-l6C7pwt8.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-HdyaeCU9.css">
+    <script type="module" crossorigin src="https://moussabfatmi.me/assets/index-BrVrwwch.js"></script>
+    <link rel="modulepreload" crossorigin href="https://moussabfatmi.me/assets/react-vendor-VIAh7PwP.js">
+    <link rel="stylesheet" crossorigin href="https://moussabfatmi.me/assets/index-DMZNszWI.css">
   </head>
   <body>
     <div id="root"></div>
+    <!-- Prevent FOUC -->
+    <script>
+      document.body.classList.add('loaded');
+    </script>
   </body>
 </html>
