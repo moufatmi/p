@@ -67,8 +67,7 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Mon CV</h3>
             <p className="text-gray-300 text-sm mb-4">
-              Téléchargez mon CV complet au format PDF pour découvrir 
-              l'ensemble de mon parcours professionnel.
+              Téléchargez mon CV complet au format PDF.
             </p>
             <a
               href={cvFile}

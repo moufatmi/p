@@ -1,6 +1,7 @@
 import emailjs from 'emailjs-com';
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Linkedin, Download, Send, CheckCircle } from 'lucide-react';
+import cvFile from '../assets/CV.pdf';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -212,10 +213,14 @@ const Contact: React.FC = () => {
               <p className="mb-6 opacity-90">
                 Version PDF complète avec toutes mes expériences et références
               </p>
-              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center gap-2 mx-auto">
+              <a
+                href={cvFile}
+                download="CV.pdf"
+                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center gap-2 mx-auto"
+              >
                 <Download className="h-5 w-5" />
                 Télécharger CV (PDF)
-              </button>
+              </a>
             </div>
 
             {/* Availability */}
@@ -226,7 +231,6 @@ const Contact: React.FC = () => {
               </div>
               <p className="text-green-700">
                 Actuellement à la recherche de nouvelles opportunités. 
-                Disponible pour un entretien sous 48h.
               </p>
             </div>
           </div>
