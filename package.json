@@ -16,6 +16,7 @@
     "update": "git add . && git commit -m 'update' && git push && npm run build && npm run deploy"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/typography": "^0.5.16",
     "@types/react-helmet-async": "^1.0.1",
     "emailjs-com": "^3.2.0",
