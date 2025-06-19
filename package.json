@@ -14,9 +14,9 @@
     "prebuild": "npm run clean",
     "postbuild": "cp dist/index.html dist/404.html",
     "update": "git add . && git commit -m 'update' && git push && npm run build && npm run deploy"
-
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@types/react-helmet-async": "^1.0.1",
     "emailjs-com": "^3.2.0",
     "lucide-react": "^0.344.0",
