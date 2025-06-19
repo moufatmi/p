@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Blog Post Images -->
+  <url>
+    <loc>https://moussabfatmi.me/blog/guide-complet-hajj-preparation-conseils</loc>
+    <image:image>
+      <image:loc>https://moussabfatmi.me/blog/hajj-guide.jpg</image:loc>
+      <image:title>Guide Complet pour le Hajj</image:title>
+      <image:caption>Guide détaillé pour la préparation du pèlerinage du Hajj</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://moussabfatmi.me/blog/10-destinations-incontournables-maroc</loc>
+    <image:image>
+      <image:loc>https://moussabfatmi.me/blog/morocco-destinations.jpg</image:loc>
+      <image:title>Destinations Incontournables au Maroc</image:title>
+      <image:caption>Les plus beaux endroits à visiter au Maroc</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://moussabfatmi.me/blog/planifier-voyage-sur-mesure</loc>
+    <image:image>
+      <image:loc>https://moussabfatmi.me/blog/custom-travel.jpg</image:loc>
+      <image:title>Planifier un Voyage Sur Mesure</image:title>
+      <image:caption>Guide pour organiser un voyage personnalisé</image:caption>
+    </image:image>
+  </url>
+</urlset> 
