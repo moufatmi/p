@@ -15,10 +15,9 @@ const Skills: React.FC = () => {
     { name: 'Amadeus NDC', level: 100 },
     { name: 'Amadeus Cryptique', level: 80 },
     { name: 'Création d\'applications web (HTML, CSS, JavaScript)', level: 100 },
-    { name: 'PHP & MySQL', level: 80 },
-    { name: 'Gestion de bases de données', level: 80 },
-    { name: 'Microsoft Excel (niveau avancé)', level: 90 },
-    { name: 'Support technique informatique (dépannage logiciels et matériels)', level: 85 },
+    { name: 'PHP & MySQL', level: 60 },
+    { name: 'Microsoft apps (Word, Excel, PowerPoint...)', level: 90 },
+    { name: 'Support technique informatique (dépannage logiciels et matériels)', level: 100 },
     { name: 'Connaissances en SEO et optimisation web', level: 70 },
     { name: 'Outils de gestion de projet (Trello, Jira)', level: 60 }
   ];
