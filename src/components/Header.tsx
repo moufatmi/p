@@ -15,21 +15,23 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm" role="banner">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center space-x-2">
-            <User className="h-8 w-8 text-blue-600" />
+          {/* Logo and Name */}
+          <a href="#home" className="flex items-center space-x-2" aria-label="Retour à l'accueil">
+            <User className="h-8 w-8 text-blue-600" aria-hidden="true" />
             <span className="text-2xl font-bold text-gray-900">Moussab Fatmi</span>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8" aria-label="Navigation principale">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                aria-current={item.href === '#home' ? 'page' : undefined}
               >
                 {item.name}
               </a>
@@ -39,48 +41,62 @@ const Header: React.FC = () => {
           {/* CV Download Button */}
           <a
             href={cvFile}
-            download="CV.pdf"
+            download="CV_Moussab_Fatmi.pdf"
             className="hidden md:flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
+            aria-label="Télécharger mon CV au format PDF"
           >
-            <Download className="h-4 w-4" />
+            <Download className="h-4 w-4" aria-hidden="true" />
             Télécharger CV
           </a>
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden"
+            type="button"
+            className="md:hidden inline-flex items-center justify-center p-2 rounded-md"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label={isMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-700" />
+              <X className="h-6 w-6 text-gray-700" aria-hidden="true" />
             ) : (
-              <Menu className="h-6 w-6 text-gray-700" />
+              <Menu className="h-6 w-6 text-gray-700" aria-hidden="true" />
             )}
           </button>
         </div>
       </div>
 
       {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
-          <nav className="px-4 py-4 space-y-3">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="block text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
-            <button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 w-full justify-center">
-              <Download className="h-4 w-4" />
-              Télécharger CV
-            </button>
-          </nav>
-        </div>
-      )}
+      <div 
+        id="mobile-menu"
+        className={`md:hidden bg-white border-t ${isMenuOpen ? '' : 'hidden'}`}
+        role="navigation"
+        aria-label="Menu mobile"
+      >
+        <nav className="px-4 py-4 space-y-3">
+          {navItems.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className="block text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+              onClick={() => setIsMenuOpen(false)}
+              aria-current={item.href === '#home' ? 'page' : undefined}
+            >
+              {item.name}
+            </a>
+          ))}
+          <a
+            href={cvFile}
+            download="CV_Moussab_Fatmi.pdf"
+            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 w-full justify-center"
+            aria-label="Télécharger mon CV au format PDF"
+          >
+            <Download className="h-4 w-4" aria-hidden="true" />
+            Télécharger CV
+          </a>
+        </nav>
+      </div>
     </header>
   );
 };

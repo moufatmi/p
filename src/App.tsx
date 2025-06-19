@@ -9,15 +9,21 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-blue-600">
+        Aller au contenu principal
+      </a>
+      
       <Header />
-      <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Contact />
+      <main id="main-content" className="bg-white">
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Contact />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

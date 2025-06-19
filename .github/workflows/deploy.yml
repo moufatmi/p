@@ -1,0 +1,58 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  # Allow manual triggering
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
+    
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+          
+      - name: Install Dependencies 📦
+        run: npm ci
+        
+      - name: Build Project 🏗️
+        run: npm run build
+        env:
+          NODE_ENV: production
+          
+      - name: Create 404.html 🔄
+        run: cp dist/index.html dist/404.html
+        
+      - name: Add .nojekyll file 🚫
+        run: touch dist/.nojekyll
+        
+      - name: Add CNAME for custom domain 🌐
+        run: echo "moussabfatmi.me" > dist/CNAME
+        
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          clean: true # Automatically remove deleted files from the deploy branch
+          force_orphan: true # Create a new orphan branch each time to keep deployment history clean
+          cname: moussabfatmi.me
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy to GitHub Pages [skip ci]' 
