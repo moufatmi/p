@@ -95,13 +95,13 @@ const Hero: React.FC = () => {
               </div>
               
               {/* Decorative Elements */}
-              <div className="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg p-4 transform rotate-12" aria-hidden="true">
+              <div className="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg p-4 transform rotate-12 animate-float-fast" aria-hidden="true">
                 <span className="text-2xl" role="presentation">✈️</span>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-4 transform -rotate-12" aria-hidden="true">
+              <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-4 transform -rotate-12 animate-float-slow" aria-hidden="true">
                 <span className="text-2xl" role="presentation">🌍</span>
               </div>
-              <div className="absolute top-1/2 -right-8 bg-white rounded-xl shadow-lg p-3 transform rotate-6" aria-hidden="true">
+              <div className="absolute top-1/2 -right-8 bg-white rounded-xl shadow-lg p-3 transform rotate-6 animate-float" aria-hidden="true">
                 <span className="text-xl" role="presentation">🏖️</span>
               </div>
             </div>
