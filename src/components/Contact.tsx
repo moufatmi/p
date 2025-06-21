@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com';
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Phone, Mail, MapPin, Linkedin, Download, Send, CheckCircle } from 'lucide-react';
 import cvFile from '../assets/CV.pdf';
 
@@ -37,6 +37,16 @@ const Contact: React.FC = () => {
         alert('Erreur lors de l\'envoi du message. Veuillez réessayer.');
     });
   };
+
+  const filledFields = useMemo(() => {
+    let count = 0;
+    if (formData.name) count++;
+    if (formData.email) count++;
+    if (formData.message) count++;
+    return count;
+  }, [formData]);
+
+  const isFormComplete = filledFields === 3;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -169,17 +179,37 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     rows={4}
                     placeholder="Parlez-moi de votre entreprise et du poste qui vous intéresse..."
+                    required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2"
-                >
-                  <Send className="h-5 w-5" />
-                  Envoyer le message
-                </button>
+                <div className="pt-4">
+                  <button
+                    type="submit"
+                    disabled={!isFormComplete}
+                    className={`w-full relative flex items-center justify-center h-14 px-6 py-3 rounded-lg font-semibold text-white transition-all duration-500 ease-in-out transform-gpu
+                      ${isFormComplete ? 'bg-blue-600 hover:bg-blue-700 cursor-pointer' : 'bg-gray-400 cursor-not-allowed'}
+                    `}
+                  >
+                    <span 
+                      className={`absolute left-0 top-0 h-full w-1/3 bg-blue-600 rounded-l-lg transition-all duration-300 ease-out 
+                        ${filledFields >= 1 ? 'opacity-100 transform-none' : 'opacity-50 -translate-x-4 -rotate-12'}`}
+                    />
+                    <span 
+                      className={`absolute left-1/3 top-0 h-full w-1/3 bg-blue-600 transition-all duration-300 ease-out 
+                        ${filledFields >= 2 ? 'opacity-100 transform-none' : 'opacity-50 translate-y-4 scale-75'}`}
+                    />
+                    <span 
+                      className={`absolute right-0 top-0 h-full w-1/3 bg-blue-600 rounded-r-lg transition-all duration-300 ease-out 
+                        ${filledFields >= 3 ? 'opacity-100 transform-none' : 'opacity-50 translate-x-4 rotate-12'}`}
+                    />
+                    <span className="relative z-10 flex items-center justify-center gap-2">
+                      <Send className="h-5 w-5" />
+                      Envoyer le message
+                    </span>
+                  </button>
+                </div>
               </form>
             )}
           </div>
