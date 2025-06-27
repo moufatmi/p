@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  cursor: url('/cursor/fe9749ee-bdfb-4f77-8205-fe75b62a6f8a.png') 4 4, auto !important;
+}
+
+a, button {
+  cursor: url('/cursor/fe9749ee-bdfb-4f77-8205-fe75b62a6f8a.png') 4 4, pointer !important;
+}

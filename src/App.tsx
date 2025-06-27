@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
+import About2 from './components/About2';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
@@ -20,6 +21,7 @@ function App() {
             <main id="main-content">
               <Hero />
               <About />
+              <About2 />
               <Experience />
               <Skills />
               <Contact />

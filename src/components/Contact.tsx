@@ -185,8 +185,8 @@ const Contact: React.FC = () => {
                 </div>
 
                 <div className="pt-4">
-                  <button
-                    type="submit"
+                <button
+                  type="submit"
                     disabled={!isFormComplete}
                     className={`w-full relative flex items-center justify-center h-14 px-6 py-3 rounded-lg font-semibold text-white transition-all duration-500 ease-in-out transform-gpu
                       ${isFormComplete ? 'bg-blue-600 hover:bg-blue-700 cursor-pointer' : 'bg-gray-400 cursor-not-allowed'}
@@ -205,10 +205,10 @@ const Contact: React.FC = () => {
                         ${filledFields >= 3 ? 'opacity-100 transform-none' : 'opacity-50 translate-x-4 rotate-12'}`}
                     />
                     <span className="relative z-10 flex items-center justify-center gap-2">
-                      <Send className="h-5 w-5" />
-                      Envoyer le message
+                  <Send className="h-5 w-5" />
+                  Envoyer le message
                     </span>
-                  </button>
+                </button>
                 </div>
               </form>
             )}

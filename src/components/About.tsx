@@ -1,7 +1,5 @@
 import React from 'react';
 import { Award, Globe, Heart, Target } from 'lucide-react';
-import profileImg from '../assets/profile 2.jpg';
-import dashboardImg from '../assets/dashboard.jpg';
 
 const About: React.FC = () => {
   const qualities = [
@@ -34,29 +32,52 @@ const About: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             À Propos de Moi
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Passionnée de voyages depuis toujours, j'ai transformé ma passion en expertise professionnelle
-          </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-          <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-              Mon Parcours Professionnel
-            </h3>
-            <div className="space-y-4 text-gray-600">
-              <p>Salut ! Moi c'est Moussab Fatmi — un passionné de tech, de voyage et d'innovation.</p>
-              <p>Depuis mon enfance, je suis fasciné par le monde du digital. J'aime créer des solutions simples à des problèmes réels. Récemment, j'ai conçu une plateforme web dédiée aux agences de voyage, pour faciliter la gestion des factures au quotidien — un projet né de mon expérience directe dans le secteur.</p>
-              <p>En parallèle, je poursuis mes études en Droit civil à l'université, tout en continuant à explorer le monde du code, du design web et de la stratégie digitale. Mon super-pouvoir ? Savoir comment attirer les touristes et les aider à découvrir des lieux incroyables, à travers une approche créative et ciblée.</p>
-              <p>Je suis toujours prêt à relever de nouveaux défis, apprendre, collaborer, et construire des choses qui comptent.</p>
+        <div className="grid lg:grid-cols-3 gap-8 items-stretch mb-16">
+          {/* French Column */}
+          <div className="p-1 rounded-2xl bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 hover:animate-gradient-xy transition-all duration-300">
+            <div className="bg-gray-50 p-6 rounded-xl h-full">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                Moussab Fatmi
+              </h3>
+              <div className="space-y-3 text-gray-600">
+                <p>Je suis Moussab Fatmi, agent de voyages passionné et entrepreneur dans l'âme. Ce qui me motive le plus, c'est de prendre en charge chaque client de A à Z et de résoudre ses problèmes avec soin et efficacité.</p>
+                <p>Curieux et avide d'apprentissage, je m'adapte aux besoins de mon agence et de mes clients en maîtrisant les outils et plateformes spécifiques comme Melisur, Arabia, Ryanair ou Amadeus.</p>
+                <p>Mon ambition est de devenir le premier fournisseur au Maroc pour les services Hajj, Omra et voyages organisés.</p>
+                <p>Je crois en des valeurs simples et fortes : la qualité de service, l'écoute, la transparence et l'envie constante de progresser.</p>
+              </div>
             </div>
           </div>
-          <div>
-            <img
-              src={dashboardImg}
-              alt="Dashboard screenshot"
-              className="rounded-2xl shadow-lg w-full max-w-[800px] h-auto"
-            />
+
+          {/* Arabic Column */}
+          <div dir="rtl" className="p-1 rounded-2xl bg-gradient-to-r from-green-400 via-teal-500 to-cyan-500 hover:animate-gradient-xy transition-all duration-300">
+            <div className="bg-gray-50 p-6 rounded-xl h-full">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-right">
+                نبذة عني
+              </h3>
+              <div className="space-y-3 text-gray-600 text-right">
+                <p>أنا مصعب فاطمي، وكيل أسفار شغوف ومحب للتعلم. أكثر ما يسعدني في عملي هو القدرة على مرافقة المسافر من الألف إلى الياء وحل مشاكله بأفضل طريقة ممكنة.</p>
+                <p>أمتلك خبرة عملية في فهم كيفية عمل التطبيقات والمواقع، وأعرف كيف أُديرها بما يتناسب مع احتياجات وكالتي أو الشركة التي أعمل بها.</p>
+                <p>طموحي أن أكون المزود رقم واحد في المغرب لخدمات الحج والعمرة، وكذلك لبرامج السفر المنظم داخل المغرب وخارجه.</p>
+                <p>أؤمن بقيم الجودة، حسن الإصغاء، الشفافية، والتطور المستمر. أنا شخص متعطش لتعلم كل جديد ومعرفة كل ما يمكن أن يطور عملي.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* English Column */}
+          <div className="p-1 rounded-2xl bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 hover:animate-gradient-xy transition-all duration-300">
+            <div className="bg-gray-50 p-6 rounded-xl h-full">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                About Me
+              </h3>
+              <div className="space-y-3 text-gray-600">
+                <p>I'm Moussab Fatmi, a passionate travel agent with a strong desire to learn and grow. What I enjoy most is taking full care of each traveler, solving their problems efficiently, and always finding new ways to improve.</p>
+                <p>I have practical experience understanding how apps and websites work, and I know how to manage them based on my needs. I'm skilled at using industry tools like Melisur, Arabia, Ryanair, and Amadeus.</p>
+                <p>My ambition is to become the number one provider in Morocco for Hajj and Omra services, as well as organized trips both inside and outside the country.</p>
+                <p>I believe in values like quality service, attentive listening, transparency, and continuous learning to better serve my clients.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -81,7 +81,8 @@ const Experience: React.FC = () => {
                         </div>
             {/* Assistant administratif */}
             <div className="bg-white rounded-2xl shadow-lg p-6">
-              <h4 className="text-xl font-semibold mb-1">🔸 Assistant administratif – Entreprise d'importation et distribution de bois</h4>
+              <h4 className="text-xl font-semibold mb-1">🔸 Assistant administratif – Bois Select</h4>
+              <div className="text-gray-500 mb-2">Entreprise d'importation et distribution de bois</div>
               <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 Été 2020 (5 mois)</div>
               <ul className="list-disc pl-5 space-y-1 text-gray-700">
                 <li>Organisation et classement des factures papier et numériques.</li>
@@ -91,7 +92,8 @@ const Experience: React.FC = () => {
                         </div>
             {/* Technicien vendeur */}
             <div className="bg-white rounded-2xl shadow-lg p-6">
-              <h4 className="text-xl font-semibold mb-1">🔸 Technicien vendeur – Magasin de réparation et vente d'appareils électroniques</h4>
+              <h4 className="text-xl font-semibold mb-1">🔸 Technicien vendeur – ISLYMICRO</h4>
+              <div className="text-gray-500 mb-2">Magasin de réparation et vente d'appareils électroniques</div>
               <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 2018 (1 an)</div>
               <ul className="list-disc pl-5 space-y-1 text-gray-700">
                 <li>Réparation et maintenance d'ordinateurs et téléphones mobiles.</li>
