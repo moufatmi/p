@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Téléphone',
-      details: '+212 6 98 57 02 82',
+      details: '+212 (0) 6 98 57 02 82',
       subtext: 'Disponible 9h-18h'
     },
     {
