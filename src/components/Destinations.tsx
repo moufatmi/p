@@ -63,16 +63,16 @@ const Destinations: React.FC = () => {
     <section id="destinations" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Destinations d'Exception
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Découvrez mes destinations coup de cœur, soigneusement sélectionnées pour vous offrir 
             des expériences authentiques et mémorables
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {destinations.map((destination) => (
             <div
               key={destination.id}
@@ -82,11 +82,11 @@ const Destinations: React.FC = () => {
                 <img
                   src={destination.image}
                   alt={destination.name}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-48 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center gap-1">
-                  <Star className="h-4 w-4 text-yellow-400 fill-current" />
-                  <span className="text-sm font-medium">{destination.rating}</span>
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-2 sm:px-3 py-1 flex items-center gap-1">
+                  <Star className="h-3 w-3 sm:h-4 sm:w-4 text-yellow-400 fill-current" />
+                  <span className="text-xs sm:text-sm font-medium">{destination.rating}</span>
                 </div>
                 <div className="absolute bottom-4 left-4 flex gap-2">
                   {destination.tags.slice(0, 2).map((tag, index) => (
@@ -97,16 +97,16 @@ const Destinations: React.FC = () => {
                 </div>
               </div>
 
-              <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <MapPin className="h-4 w-4 text-gray-400" />
-                  <h3 className="text-xl font-semibold text-gray-900">{destination.name}</h3>
+              <div className="p-4 sm:p-6">
+                <div className="flex items-center gap-2 mb-2 sm:mb-3">
+                  <MapPin className="h-3 w-3 sm:h-4 sm:w-4 text-gray-400" />
+                  <h3 className="text-base sm:text-xl font-semibold text-gray-900">{destination.name}</h3>
                 </div>
-                <p className="text-gray-600 mb-4">{destination.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-lg font-bold text-sky-500">{destination.price}</span>
-                  <button className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-full text-sm transition-colors duration-200 flex items-center gap-2">
-                    <Camera className="h-4 w-4" />
+                <p className="text-gray-600 mb-2 sm:mb-4 text-xs sm:text-base">{destination.description}</p>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-0">
+                  <span className="text-base sm:text-lg font-bold text-sky-500">{destination.price}</span>
+                  <button className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-full text-xs sm:text-sm transition-colors duration-200 flex items-center gap-2">
+                    <Camera className="h-3 w-3 sm:h-4 sm:w-4" />
                     Découvrir
                   </button>
                 </div>
@@ -115,8 +115,8 @@ const Destinations: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-200">
+        <div className="text-center mt-8 sm:mt-12">
+          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg font-semibold transition-colors duration-200">
             Voir Toutes les Destinations
           </button>
         </div>

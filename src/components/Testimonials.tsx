@@ -74,40 +74,40 @@ const Testimonials: React.FC = () => {
     <section id="testimonials" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Ce Que Disent Mes Clients
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Plus de 2400 voyageurs ont fait confiance à mon expertise pour créer leurs souvenirs inoubliables
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-shadow duration-300 relative"
+              className="bg-gray-50 rounded-2xl p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300 relative"
             >
-              <Quote className="h-8 w-8 text-sky-500 opacity-50 mb-4" />
+              <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-sky-500 opacity-50 mb-2 sm:mb-4" />
               
-              <div className="flex items-center gap-1 mb-4">
+              <div className="flex items-center gap-1 mb-2 sm:mb-4">
                 {renderStars(testimonial.rating)}
               </div>
               
-              <p className="text-gray-700 mb-6 italic">
+              <p className="text-gray-700 mb-4 sm:mb-6 italic text-xs sm:text-base">
                 "{testimonial.text}"
               </p>
               
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 sm:gap-4">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
                 />
                 <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500">{testimonial.location}</p>
-                  <p className="text-sm text-sky-600 font-medium">{testimonial.trip}</p>
+                  <h4 className="font-semibold text-gray-900 text-sm sm:text-base">{testimonial.name}</h4>
+                  <p className="text-xs sm:text-sm text-gray-500">{testimonial.location}</p>
+                  <p className="text-xs sm:text-sm text-sky-600 font-medium">{testimonial.trip}</p>
                 </div>
               </div>
             </div>
@@ -115,19 +115,19 @@ const Testimonials: React.FC = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-16 bg-gradient-to-r from-sky-500 to-orange-500 rounded-3xl p-8">
-          <div className="grid md:grid-cols-3 gap-8 text-center text-white">
+        <div className="mt-10 sm:mt-16 bg-gradient-to-r from-sky-500 to-orange-500 rounded-2xl sm:rounded-3xl p-6 sm:p-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-center text-white">
             <div>
-              <div className="text-4xl font-bold mb-2">2,400+</div>
-              <div className="text-lg opacity-90">Clients Satisfaits</div>
+              <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">2,400+</div>
+              <div className="text-base sm:text-lg opacity-90">Clients Satisfaits</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">4.9/5</div>
-              <div className="text-lg opacity-90">Note Moyenne</div>
+              <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">4.9/5</div>
+              <div className="text-base sm:text-lg opacity-90">Note Moyenne</div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">98%</div>
-              <div className="text-lg opacity-90">Recommandations</div>
+              <div className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">98%</div>
+              <div className="text-base sm:text-lg opacity-90">Recommandations</div>
             </div>
           </div>
         </div>

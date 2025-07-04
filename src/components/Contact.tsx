@@ -86,18 +86,18 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Contactez-moi
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Intéressé par mon profil ? N'hésitez pas à me contacter pour discuter d'opportunités
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Form */}
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+          <div className="bg-gray-50 rounded-2xl p-4 sm:p-8">
+            <h3 className="text-lg sm:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
               Envoyez-moi un message
             </h3>
             
@@ -214,55 +214,25 @@ const Contact: React.FC = () => {
             )}
           </div>
 
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                Informations de Contact
-              </h3>
-              <div className="space-y-6">
-                {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-start gap-4">
-                    <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg">
-                      <info.icon className="h-6 w-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-900">{info.title}</h4>
-                      <p className="text-gray-700">{info.details}</p>
-                      <p className="text-sm text-gray-500">{info.subtext}</p>
-                    </div>
-                  </div>
-                ))}
+          {/* Contact Info */}
+          <div className="bg-white rounded-2xl p-4 sm:p-8 flex flex-col gap-4 sm:gap-6 justify-center">
+            <h3 className="text-lg sm:text-2xl font-semibold text-gray-900 mb-2 sm:mb-4">
+              Mes Coordonnées
+            </h3>
+            {contactInfo.map((info, idx) => (
+              <div key={idx} className="flex items-center gap-3 text-gray-600 text-sm sm:text-base">
+                <info.icon className="h-5 w-5 text-blue-600" aria-hidden="true" />
+                <div>
+                  <div className="font-semibold">{info.title}</div>
+                  {info.title === 'LinkedIn' ? (
+                    <a href={info.details} target="_blank" rel="noopener noreferrer" className="text-blue-600 underline break-all">{info.details}</a>
+                  ) : (
+                    <span>{info.details}</span>
+                  )}
+                  <div className="text-xs text-gray-400">{info.subtext}</div>
+                </div>
               </div>
-            </div>
-
-            {/* CV Download */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 text-white text-center">
-              <Download className="h-12 w-12 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Télécharger mon CV</h3>
-              <p className="mb-6 opacity-90">
-                Version PDF complète avec toutes mes expériences et références
-              </p>
-              <a
-                href={cvFile}
-                download="CV.pdf"
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center gap-2 mx-auto"
-              >
-                <Download className="h-5 w-5" />
-                Télécharger CV (PDF)
-              </a>
-            </div>
-
-            {/* Availability */}
-            <div className="bg-green-50 border border-green-200 rounded-2xl p-6">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <h4 className="font-semibold text-green-800">Disponibilité</h4>
-              </div>
-              <p className="text-green-700">
-                Actuellement à la recherche de nouvelles opportunités. 
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </div>

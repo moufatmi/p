@@ -50,25 +50,25 @@ const Skills: React.FC = () => {
     <section id="skills" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Compétences & Expertise
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Un ensemble complet de compétences techniques et relationnelles
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
           {/* Technical Skills */}
-          <div className="bg-gray-50 rounded-2xl p-8">
+          <div className="bg-gray-50 rounded-2xl p-4 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <Laptop className="h-6 w-6 text-blue-600" />
-              <h3 className="text-2xl font-semibold text-gray-900">Compétences Techniques</h3>
+              <Laptop className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
+              <h3 className="text-lg sm:text-2xl font-semibold text-gray-900">Compétences Techniques</h3>
             </div>
             <div className="space-y-4">
               {technicalSkills.map((skill, index) => (
                 <div key={index}>
-                  <div className="flex justify-between mb-2">
+                  <div className="flex justify-between mb-2 text-sm sm:text-base">
                     <span className="font-medium text-gray-700">{skill.name}</span>
                     <span className="text-blue-600 font-semibold">{skill.level}%</span>
                   </div>
@@ -84,19 +84,19 @@ const Skills: React.FC = () => {
           </div>
 
           {/* Languages */}
-          <div className="bg-gray-50 rounded-2xl p-8">
+          <div className="bg-gray-50 rounded-2xl p-4 sm:p-8">
             <div className="flex items-center gap-3 mb-6">
-              <Languages className="h-6 w-6 text-blue-600" />
-              <h3 className="text-2xl font-semibold text-gray-900">Langues</h3>
+              <Languages className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
+              <h3 className="text-lg sm:text-2xl font-semibold text-gray-900">Langues</h3>
             </div>
             <div className="space-y-4">
               {languages.map((lang, index) => (
-                <div key={index} className="flex items-center justify-between p-4 bg-white rounded-lg">
+                <div key={index} className="flex items-center justify-between p-3 sm:p-4 bg-white rounded-lg">
                   <div className="flex items-center gap-3">
-                    <span className="text-2xl">{lang.flag}</span>
-                    <span className="font-medium text-gray-700">{lang.name}</span>
+                    <span className="text-xl sm:text-2xl">{lang.flag}</span>
+                    <span className="font-medium text-gray-700 text-sm sm:text-base">{lang.name}</span>
                   </div>
-                  <span className="text-blue-600 font-semibold">{lang.level}</span>
+                  <span className="text-blue-600 font-semibold text-sm sm:text-base">{lang.level}</span>
                 </div>
               ))}
             </div>
@@ -105,36 +105,36 @@ const Skills: React.FC = () => {
 
         {/* Soft Skills */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
+          <h3 className="text-lg sm:text-2xl font-semibold text-gray-900 mb-8 text-center">
             Compétences Relationnelles
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {softSkills.map((skill, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg mb-4">
-                  <skill.icon className="h-6 w-6 text-blue-600" />
+              <div key={index} className="bg-gray-50 rounded-xl p-4 sm:p-6 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg mb-4">
+                  <skill.icon className="h-5 w-5 sm:h-6 sm:w-6 text-blue-600" />
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">{skill.name}</h4>
-                <p className="text-gray-600 text-sm">{skill.description}</p>
+                <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">{skill.name}</h4>
+                <p className="text-gray-600 text-xs sm:text-sm">{skill.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Certifications */}
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-8 text-white">
+        <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-4 sm:p-8 text-white">
           <div className="text-center mb-8">
-            <Award className="h-12 w-12 mx-auto mb-4" />
-            <h3 className="text-2xl font-semibold mb-2">Certifications & Formations</h3>
-            <p className="opacity-90">Formation continue et certifications professionnelles</p>
+            <Award className="h-8 w-8 sm:h-12 sm:w-12 mx-auto mb-4" />
+            <h3 className="text-lg sm:text-2xl font-semibold mb-2">Certifications & Formations</h3>
+            <p className="opacity-90 text-sm sm:text-base">Formation continue et certifications professionnelles</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4">
             {certifications.map((cert, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
+              <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
                 {cert.link ? (
-                  <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-blue-200 underline hover:text-blue-100">{cert.name}</a>
+                  <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-xs sm:text-sm font-medium text-blue-200 underline hover:text-blue-100">{cert.name}</a>
                 ) : (
-                  <span className="text-sm font-medium">{cert.name}</span>
+                  <span className="text-xs sm:text-sm font-medium">{cert.name}</span>
                 )}
               </div>
             ))}

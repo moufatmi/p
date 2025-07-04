@@ -19,32 +19,32 @@ const Hero: React.FC = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Text */}
           <div>
             <header className="mb-6">
-              <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-4" role="text">
+              <span className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs sm:text-sm font-medium mb-4" role="text">
                 Agent de Voyage
               </span>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
                 Moussab <span className="text-blue-600">Fatmi</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-6">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6">
                 Conseiller en voyages passionné avec 3 ans d'expérience dans la création d'expériences de voyage exceptionnelles. Désormais, je propose également des services spécialisés pour le Hajj et la Omra.
               </p>
             </header>
 
             {/* Contact Info */}
             <address className="space-y-3 mb-8 not-italic">
-              <a href="tel:+212698570282" className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
+              <a href="tel:+212698570282" className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors text-sm sm:text-base">
                 <Phone className="h-5 w-5 text-blue-600" aria-hidden="true" />
                 <span>+212 6 98 57 02 82</span>
               </a>
-              <a href="mailto:moussabfatmi@gmail.com" className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors">
+              <a href="mailto:moussabfatmi@gmail.com" className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors text-sm sm:text-base">
                 <Mail className="h-5 w-5 text-blue-600" aria-hidden="true" />
                 <span>moussabfatmi@gmail.com</span>
               </a>
-              <p className="flex items-center gap-3 text-gray-600">
+              <p className="flex items-center gap-3 text-gray-600 text-sm sm:text-base">
                 <MapPin className="h-5 w-5 text-blue-600" aria-hidden="true" />
                 <span>Oujda, Morocco</span>
               </p>
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
                 href="https://www.linkedin.com/in/moussabfatmi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors"
+                className="flex items-center gap-3 text-gray-600 hover:text-blue-600 transition-colors text-sm sm:text-base"
               >
                 <Linkedin className="h-5 w-5 text-blue-600" aria-hidden="true" />
                 <span>linkedin.com/in/moussabfatmi</span>
@@ -60,11 +60,11 @@ const Hero: React.FC = () => {
             </address>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4" role="group" aria-label="Actions principales">
+            <div className="flex flex-col sm:flex-row gap-4 w-full">
               <a
                 href={cvFile}
                 download="CV_Moussab_Fatmi.pdf"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2 text-sm sm:text-base"
                 aria-label="Télécharger mon CV au format PDF"
               >
                 <Download className="h-5 w-5" aria-hidden="true" />
@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
                 href="https://www.facebook.com/moussabfatmi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center"
+                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center text-sm sm:text-base"
                 aria-label="Me contacter sur Facebook"
               >
                 Me contacter
@@ -83,9 +83,9 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Right Column - Photo */}
-          <div className="relative">
+          <div className="relative mt-10 lg:mt-0 flex justify-center">
             <div className="relative">
-              <div className="w-80 h-80 mx-auto rounded-full overflow-hidden shadow-2xl border-8 border-white">
+              <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden shadow-2xl border-8 border-white">
                 <img
                   src={profileImg}
                   alt="Moussab Fatmi - Photo de profil"
@@ -93,15 +93,14 @@ const Hero: React.FC = () => {
                   loading="eager"
                 />
               </div>
-              
               {/* Decorative Elements */}
-              <div className="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg p-4 transform rotate-12 animate-float-fast" aria-hidden="true">
+              <div className="hidden sm:block absolute -top-4 -right-4 bg-white rounded-xl shadow-lg p-4 transform rotate-12 animate-float-fast" aria-hidden="true">
                 <span className="text-2xl" role="presentation">✈️</span>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-4 transform -rotate-12 animate-float-slow" aria-hidden="true">
+              <div className="hidden sm:block absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-4 transform -rotate-12 animate-float-slow" aria-hidden="true">
                 <span className="text-2xl" role="presentation">🌍</span>
               </div>
-              <div className="absolute top-1/2 -right-8 bg-white rounded-xl shadow-lg p-3 transform rotate-6 animate-float" aria-hidden="true">
+              <div className="hidden sm:block absolute top-1/2 -right-8 bg-white rounded-xl shadow-lg p-3 transform rotate-6 animate-float" aria-hidden="true">
                 <span className="text-xl" role="presentation">🏖️</span>
               </div>
             </div>

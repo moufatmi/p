@@ -48,59 +48,77 @@ const Experience: React.FC = () => {
     <section id="experience" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Expérience Professionnelle
           </h2>
         </div>
 
         <div className="relative mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6">🔹 Expérience Professionnelle Complète :</h3>
+          <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-6">
+            🔹 Expérience Professionnelle Complète :
+          </h3>
           <div className="space-y-8">
             {/* Beausejour Voyage Agent & Support */}
-            <div className="bg-white rounded-2xl shadow-lg p-6">
-              <h4 className="text-xl font-semibold mb-1">🔸 Agent de voyage & Support technique – Beausejour Voyage</h4>
-              <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 2023</div>
-              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+            <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
+              <h4 className="text-base sm:text-xl font-semibold mb-1">
+                🔸 Agent de voyage & Support technique – Beausejour Voyage
+              </h4>
+              <div className="text-gray-500 mb-2 text-sm sm:text-base">
+                📍 Oujda, Maroc | 📅 2023
+              </div>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>Accueil et accompagnement des clients dans le choix de leurs destinations et services touristiques.</li>
                 <li>Création de programmes de voyage sur mesure, réservation de vols, hébergements et activités.</li>
                 <li>Gestion des dossiers clients, suivi personnalisé et assistance avant et pendant le voyage.</li>
                 <li>💻 Responsable du support technique interne : assistance aux agents de voyage en cas de problèmes techniques liés aux logiciels, imprimantes, ou outils de réservation.</li>
                 <li>Participation à l'amélioration des processus digitaux au sein de l'agence.</li>
               </ul>
-                </div>
+            </div>
             {/* Beausejour Voyage Web Dev */}
-            <div className="bg-white rounded-2xl shadow-lg p-6">
-              <h4 className="text-xl font-semibold mb-1">🔸 Développeur Web – Projet interne Beausejour Voyage</h4>
-              <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 2024</div>
-              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+            <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
+              <h4 className="text-base sm:text-xl font-semibold mb-1">
+                🔸 Développeur Web – Projet interne Beausejour Voyage
+              </h4>
+              <div className="text-gray-500 mb-2 text-sm sm:text-base">
+                📍 Oujda, Maroc | 📅 2024
+              </div>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>Conception et développement d'un système web dédié à la gestion et au suivi des factures des clients pour les agents de voyage.</li>
                 <li>Réalisation d'une interface intuitive permettant l'enregistrement, la consultation et le classement efficace des factures quotidiennes.</li>
                 <li>Utilisation des technologies HTML, CSS, JavaScript, et PHP/MySQL pour offrir une solution complète et adaptée aux besoins spécifiques de l'agence.</li>
                 <li>Amélioration de la productivité administrative grâce à l'automatisation de tâches répétitives.</li>
               </ul>
-                        </div>
+            </div>
             {/* Assistant administratif */}
-            <div className="bg-white rounded-2xl shadow-lg p-6">
-              <h4 className="text-xl font-semibold mb-1">🔸 Assistant administratif – Bois Select</h4>
-              <div className="text-gray-500 mb-2">Entreprise d'importation et distribution de bois</div>
-              <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 Été 2020 (5 mois)</div>
-              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+            <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
+              <h4 className="text-base sm:text-xl font-semibold mb-1">
+                🔸 Assistant administratif – Bois Select
+              </h4>
+              <div className="text-gray-500 mb-2 text-sm sm:text-base">Entreprise d'importation et distribution de bois</div>
+              <div className="text-gray-500 mb-2 text-sm sm:text-base">
+                📍 Oujda, Maroc | 📅 Été 2020 (5 mois)
+              </div>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>Organisation et classement des factures papier et numériques.</li>
                 <li>Saisie des données financières dans Excel pour le suivi des opérations.</li>
                 <li>Soutien administratif général pour faciliter la gestion quotidienne.</li>
               </ul>
-                        </div>
+            </div>
             {/* Technicien vendeur */}
-            <div className="bg-white rounded-2xl shadow-lg p-6">
-              <h4 className="text-xl font-semibold mb-1">🔸 Technicien vendeur – ISLYMICRO</h4>
-              <div className="text-gray-500 mb-2">Magasin de réparation et vente d'appareils électroniques</div>
-              <div className="text-gray-500 mb-2">📍 Oujda, Maroc | 📅 2018 (1 an)</div>
-              <ul className="list-disc pl-5 space-y-1 text-gray-700">
+            <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
+              <h4 className="text-base sm:text-xl font-semibold mb-1">
+                🔸 Technicien vendeur – ISLYMICRO
+              </h4>
+              <div className="text-gray-500 mb-2 text-sm sm:text-base">Magasin de réparation et vente d'appareils électroniques</div>
+              <div className="text-gray-500 mb-2 text-sm sm:text-base">
+                📍 Oujda, Maroc | 📅 2018 (1 an)
+              </div>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>Réparation et maintenance d'ordinateurs et téléphones mobiles.</li>
                 <li>Conseil et vente d'équipements électroniques aux clients.</li>
                 <li>Gestion des stocks et suivi des commandes.</li>
               </ul>
-              </div>
+            </div>
           </div>
         </div>
       </div>
