@@ -15,7 +15,7 @@ const About2: React.FC = () => {
       icon: '💼',
       title: 'Agence de Voyage – Dashboard de Gestion',
       subtitle: 'Application web professionnelle pour agences de voyage.',
-      description: "Permet de gérer factures, services et performances grâce à deux espaces distincts : Agent et Directeur. Création d'une expérience fluide pour générer, suivre et exporter les factures, tout en offrant un aperçu complet des indicateurs financiers de l'agence.",
+      description: "- Permet de gérer factures, services et performances grâce à deux espaces distincts : Agent et Directeur. Création d'une expérience fluide pour générer, suivre et exporter les factures, tout en offrant un aperçu complet des indicateurs financiers de l'agence.",
       highlights: [
         'Tableau de bord directeur avec métriques clés et rapports exportables',
         'Gestion complète des factures côté agent',
