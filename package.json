@@ -12,7 +12,7 @@
     "deploy": "gh-pages -d dist",
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
-    "postbuild": "cpx \"dist/index.html\" \"dist/404.html\"",
+    "postbuild": "cpx dist/index.html dist/404.html",
     "update": "git add . && git commit -m 'update' && git push && npm run build && npm run deploy"
   },
   "dependencies": {
