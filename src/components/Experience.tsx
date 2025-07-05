@@ -73,7 +73,7 @@ const Experience: React.FC = () => {
                 <li>💻 Responsable du support technique interne : assistance aux agents de voyage en cas de problèmes techniques liés aux logiciels, imprimantes, ou outils de réservation.</li>
                 <li>Participation à l'amélioration des processus digitaux au sein de l'agence.</li>
               </ul>
-            </div>
+                </div>
             {/* Beausejour Voyage Web Dev */}
             <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
               <h4 className="text-base sm:text-xl font-semibold mb-1">
@@ -88,7 +88,7 @@ const Experience: React.FC = () => {
                 <li>Utilisation des technologies HTML, CSS, JavaScript, et PHP/MySQL pour offrir une solution complète et adaptée aux besoins spécifiques de l'agence.</li>
                 <li>Amélioration de la productivité administrative grâce à l'automatisation de tâches répétitives.</li>
               </ul>
-            </div>
+                        </div>
             {/* Assistant administratif */}
             <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
               <h4 className="text-base sm:text-xl font-semibold mb-1">
@@ -103,7 +103,7 @@ const Experience: React.FC = () => {
                 <li>Saisie des données financières dans Excel pour le suivi des opérations.</li>
                 <li>Soutien administratif général pour faciliter la gestion quotidienne.</li>
               </ul>
-            </div>
+                        </div>
             {/* Technicien vendeur */}
             <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
               <h4 className="text-base sm:text-xl font-semibold mb-1">
@@ -118,7 +118,7 @@ const Experience: React.FC = () => {
                 <li>Conseil et vente d'équipements électroniques aux clients.</li>
                 <li>Gestion des stocks et suivi des commandes.</li>
               </ul>
-            </div>
+              </div>
           </div>
         </div>
       </div>
