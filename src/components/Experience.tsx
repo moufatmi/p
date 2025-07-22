@@ -89,6 +89,23 @@ const Experience: React.FC = () => {
                 <li>Amélioration de la productivité administrative grâce à l'automatisation de tâches répétitives.</li>
               </ul>
                         </div>
+            {/* Car Rental Management System */}
+            <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
+              <h4 className="text-base sm:text-xl font-semibold mb-1">
+                🔸 Développeur Web – Car Rental Management System
+              </h4>
+              <div className="text-gray-500 mb-2 text-sm sm:text-base">Système de gestion pour agences de location de voitures</div>
+              <div className="text-gray-500 mb-2 text-sm sm:text-base">
+                📍 Projet personnel | 📅 2024-2025
+              </div>
+              <ul className="list-disc pl-5 space-y-1 text-gray-700 text-sm sm:text-base">
+                <li>Conception et développement d'une application complète de gestion de location de véhicules.</li>
+                <li>Implémentation d'un système de réservation avec gestion des disponibilités et calendrier intégré.</li>
+                <li>Création d'un tableau de bord administrateur avec statistiques, rapports et métriques de performance.</li>
+                <li>Développement d'un module de facturation automatisée et de gestion financière.</li>
+                <li>Interface responsive optimisée pour desktop et mobile avec UX/UI moderne.</li>
+              </ul>
+                        </div>
             {/* Assistant administratif */}
             <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6">
               <h4 className="text-base sm:text-xl font-semibold mb-1">

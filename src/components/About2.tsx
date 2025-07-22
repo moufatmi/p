@@ -24,6 +24,18 @@ const About2: React.FC = () => {
       link: 'https://project.beausejourvoyage.com',
       image: null,
     },
+    {
+      icon: '🚗',
+      title: 'Car Rental Management System',
+      subtitle: 'Système de gestion complète pour agences de location de voitures.',
+      description: "Application de gestion intégrale pour les entreprises de location de véhicules. Le système permet une gestion efficace des voitures, des clients, des réservations et des factures. Interface intuitive avec tableau de bord administrateur pour le suivi des performances et la gestion des opérations quotidiennes.",
+      highlights: [
+        'Système de réservation avec calendrier intégré',
+        'Tableau de bord avec statistiques et rapports détaillés',
+      ],
+      link: 'https://drive.google.com/file/d/1uDxkpmUYiWBZ5XPzHGr64XhcS-hnhAjO/view?usp=sharing',
+      image: null,
+    },
   ];
 
   return (
@@ -38,7 +50,7 @@ const About2: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index} 
