@@ -3,5 +3,5 @@ User-agent: *
 Allow: /
 
 # Sitemap locations
-Sitemap: https://moussabfatmi.me/sitemap.xml
-Sitemap: https://moussabfatmi.me/image-sitemap.xml 
+Sitemap: https://moussab.com/sitemap.xml
+Sitemap: https://moussab.com/image-sitemap.xml 

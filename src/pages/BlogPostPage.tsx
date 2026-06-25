@@ -28,18 +28,18 @@ const BlogPostPage: React.FC = () => {
       "author": {
         "@type": "Person",
         "name": post.author,
-        "@id": "https://moussabfatmi.me/#person"
+        "@id": "https://moussab.com/#person"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Moussab Fatmi Travel Services",
-        "@id": "https://moussabfatmi.me/#business"
+        "@id": "https://moussab.com/#business"
       },
       "datePublished": post.date,
       "dateModified": post.date,
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `https://moussabfatmi.me/blog/${post.slug}`
+        "@id": `https://moussab.com/blog/${post.slug}`
       },
       "keywords": post.tags.join(", ")
     });
