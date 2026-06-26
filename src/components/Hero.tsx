@@ -5,8 +5,8 @@ import cvFile from '../assets/CV.pdf';
 
 const Hero: React.FC = () => {
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100"
       aria-label="Introduction"
     >
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
                 <MapPin className="h-5 w-5 text-blue-600" aria-hidden="true" />
                 <span>Oujda, Morocco</span>
               </p>
-              <a 
+              <a
                 href="https://www.linkedin.com/in/moussabfatmi/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
                 Télécharger mon CV
               </a>
               <a
-                href="https://www.facebook.com/moussabfatmi"
+                href="https://www.facebook.com/fatmimoussab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-4 sm:px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center text-sm sm:text-base"
