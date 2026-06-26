@@ -1,38 +1,43 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import About2 from './components/About2';
-import Experience from './components/Experience';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import BlogPage from './pages/BlogPage';
-import BlogPostPage from './pages/BlogPostPage';
-import NotFoundPage from './pages/NotFoundPage';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+
+// New Global Redesign Components
+import HeroV2 from './components/HeroV2';
+import TheThesis from './components/TheThesis';
+import ImpactPortfolio from './components/ImpactPortfolio';
+import GlobalFootprint from './components/GlobalFootprint';
+import Collaborate from './components/Collaborate';
+import TerminalEasterEgg from './components/TerminalEasterEgg';
+
+// ScrollToTop Component
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
-        <Header />
+      <ScrollToTop />
+      <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
         <Routes>
-          <Route path="/" element={
-            <main id="main-content">
-              <Hero />
-              <About />
-              <About2 />
-              <Experience />
-              <Skills />
-              <Contact />
-            </main>
-          } />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route 
+            path="/" 
+            element={
+              <main>
+                <HeroV2 />
+                <TheThesis />
+                <ImpactPortfolio />
+                <GlobalFootprint />
+                <Collaborate />
+              </main>
+            } 
+          />
         </Routes>
-        <Footer />
+        <TerminalEasterEgg />
       </div>
     </Router>
   );
