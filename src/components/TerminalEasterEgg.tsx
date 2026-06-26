@@ -41,7 +41,11 @@ const COMMANDS: Record<string, () => OutputLine[]> = {
     { text: '  📍 Oujda, Morocco (Global Scope)', type: 'output' },
     { text: '  📧 contact@moussab.com', type: 'output' },
     { text: '  🔗 linkedin.com/in/moussabfatmi', type: 'output' },
-  ]
+  ],
+  '--write': () => {
+    window.location.href = '/m-vault';
+    return [{ text: 'Redirecting to secure vault...', type: 'success' }];
+  }
 };
 
 const WELCOME_LINES: OutputLine[] = [

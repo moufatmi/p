@@ -59,8 +59,8 @@ const Collaborate: React.FC = () => {
               <p className="text-gray-600 leading-relaxed mb-8 flex-grow">
                 {path.description}
               </p>
-              
-              <a 
+
+              <a
                 href={path.link}
                 className="mt-auto inline-flex items-center justify-between w-full p-4 rounded-lg bg-white text-gray-800 hover:bg-indigo-600 hover:text-white transition-colors border border-gray-200 group-hover:border-indigo-500 font-medium shadow-sm"
               >
@@ -76,7 +76,7 @@ const Collaborate: React.FC = () => {
             <a href="https://linkedin.com/in/moussabfatmi" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-600 transition-colors font-medium">
               LinkedIn
             </a>
-            <a href="https://github.com/moussabfatmi" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-600 transition-colors font-medium">
+            <a href="https://github.com/moufatmi" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-600 transition-colors font-medium">
               GitHub
             </a>
             <a href="mailto:contact@moussab.com" className="text-gray-500 hover:text-indigo-600 transition-colors font-medium">

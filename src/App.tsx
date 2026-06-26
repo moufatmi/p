@@ -11,11 +11,15 @@ import ImpactNumbers from './components/ImpactNumbers';
 import GlobalFootprint from './components/GlobalFootprint';
 import Languages from './components/Languages';
 import TestimonialsV2 from './components/TestimonialsV2';
+import InsightsPreview from './components/InsightsPreview';
 import Collaborate from './components/Collaborate';
 import TerminalEasterEgg from './components/TerminalEasterEgg';
 
 // Pages
 import NowPage from './pages/NowPage';
+import InsightsPage from './pages/InsightsPage';
+import InsightArticle from './pages/InsightArticle';
+import InsightsAdminPage from './pages/InsightsAdminPage';
 
 // ScrollToTop Component
 const ScrollToTop = () => {
@@ -45,11 +49,15 @@ function App() {
                 <GlobalFootprint />
                 <Languages />
                 <TestimonialsV2 />
+                <InsightsPreview />
                 <Collaborate />
               </main>
             } 
           />
           <Route path="/now" element={<NowPage />} />
+          <Route path="/insights" element={<InsightsPage />} />
+          <Route path="/insights/:slug" element={<InsightArticle />} />
+          <Route path="/m-vault" element={<InsightsAdminPage />} />
         </Routes>
         <TerminalEasterEgg />
       </div>
