@@ -43,7 +43,7 @@ const COMMANDS: Record<string, () => OutputLine[]> = {
     { text: '  🔗 linkedin.com/in/moussabfatmi', type: 'output' },
   ],
   '--write': () => {
-    window.location.href = '/m-vault';
+    window.location.href = '/#/m-vault';
     return [{ text: 'Redirecting to secure vault...', type: 'success' }];
   }
 };
