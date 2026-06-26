@@ -3,11 +3,19 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 
 // New Global Redesign Components
 import HeroV2 from './components/HeroV2';
+import VisitorRouter from './components/VisitorRouter';
 import TheThesis from './components/TheThesis';
+import HowIWork from './components/HowIWork';
 import ImpactPortfolio from './components/ImpactPortfolio';
+import ImpactNumbers from './components/ImpactNumbers';
 import GlobalFootprint from './components/GlobalFootprint';
+import Languages from './components/Languages';
+import TestimonialsV2 from './components/TestimonialsV2';
 import Collaborate from './components/Collaborate';
 import TerminalEasterEgg from './components/TerminalEasterEgg';
+
+// Pages
+import NowPage from './pages/NowPage';
 
 // ScrollToTop Component
 const ScrollToTop = () => {
@@ -29,13 +37,19 @@ function App() {
             element={
               <main>
                 <HeroV2 />
+                <VisitorRouter />
                 <TheThesis />
+                <HowIWork />
                 <ImpactPortfolio />
+                <ImpactNumbers />
                 <GlobalFootprint />
+                <Languages />
+                <TestimonialsV2 />
                 <Collaborate />
               </main>
             } 
           />
+          <Route path="/now" element={<NowPage />} />
         </Routes>
         <TerminalEasterEgg />
       </div>

@@ -74,7 +74,7 @@ const HeroV2: React.FC = () => {
               {/* Profile Image Container */}
               <div className="absolute inset-2 bg-white rounded-full p-2 shadow-2xl overflow-hidden border border-gray-100 z-10">
                 <img 
-                  src="/src/assets/profile 2.jpg" 
+                  src="/profile.jpg" 
                   alt="Moussab Fatmi" 
                   className="w-full h-full object-cover rounded-full"
                 />
