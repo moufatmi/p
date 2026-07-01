@@ -1,7 +1,7 @@
 {
-  "name": "Moussab Fatmi Portfolio",
+  "name": "Moussab Fatmi | مصعب فاطمي Portfolio",
   "short_name": "MF Portfolio",
-  "description": "Portfolio professionnel de Moussab Fatmi, conseillère en voyages",
+  "description": "Portfolio professionnel de Moussab Fatmi | مصعب فاطمي, conseillère en voyages",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -18,4 +18,4 @@
       "type": "image/png"
     }
   ]
-} 
+}
