@@ -21,7 +21,7 @@ const Header: React.FC = () => {
           {/* Logo and Name */}
           <a href="#home" className="flex items-center space-x-2" aria-label="Retour à l'accueil">
             <User className="h-7 w-7 sm:h-8 sm:w-8 text-blue-600" aria-hidden="true" />
-            <span className="text-lg sm:text-2xl font-bold text-gray-900">Moussab Fatmi</span>
+            <span className="text-lg sm:text-2xl font-bold text-gray-900">Moussab Fatmi | مصعب فاطمي</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div 
+      <div
         id="mobile-menu"
         className={`md:hidden bg-white border-t ${isMenuOpen ? '' : 'hidden'}`}
         role="navigation"

@@ -51,7 +51,7 @@ const COMMANDS: Record<string, () => OutputLine[]> = {
 const WELCOME_LINES: OutputLine[] = [
   { text: '╔══════════════════════════════════════╗', type: 'success' },
   { text: '║     Welcome to the terminal of       ║', type: 'success' },
-  { text: '║         Moussab Fatmi v2.0           ║', type: 'success' },
+  { text: '║         Moussab Fatmi | مصعب فاطمي v2.0           ║', type: 'success' },
   { text: '╚══════════════════════════════════════╝', type: 'success' },
   { text: "Type 'help' to see available commands.", type: 'output' },
   { text: '', type: 'output' },
@@ -164,52 +164,51 @@ const TerminalEasterEgg: React.FC = () => {
                 className="bg-gray-950 rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-gray-700"
                 onClick={(e) => e.stopPropagation()}
               >
-              {/* Title Bar */}
-              <div className="flex items-center px-4 py-3 bg-gray-800 border-b border-gray-700">
-                <div className="flex gap-2 mr-4">
-                  <button onClick={() => setIsOpen(false)} className="w-3 h-3 rounded-full bg-red-500 hover:bg-red-400 transition-colors" title="Close" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                  <div className="w-3 h-3 rounded-full bg-green-500" />
-                </div>
-                <span className="text-gray-400 text-xs font-mono mx-auto">moussab@portfolio:~</span>
-              </div>
-
-              {/* Output */}
-              <div
-                className="flex-1 overflow-y-auto p-4 font-mono text-sm cursor-text"
-                onClick={() => inputRef.current?.focus()}
-              >
-                {lines.map((line, i) => (
-                  <div
-                    key={i}
-                    className={`leading-relaxed whitespace-pre-wrap ${
-                      line.type === 'error' ? 'text-red-400' :
-                      line.type === 'success' ? 'text-green-400' :
-                      line.type === 'input' ? 'text-blue-300' :
-                      'text-gray-300'
-                    }`}
-                  >
-                    {line.text}
+                {/* Title Bar */}
+                <div className="flex items-center px-4 py-3 bg-gray-800 border-b border-gray-700">
+                  <div className="flex gap-2 mr-4">
+                    <button onClick={() => setIsOpen(false)} className="w-3 h-3 rounded-full bg-red-500 hover:bg-red-400 transition-colors" title="Close" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                    <div className="w-3 h-3 rounded-full bg-green-500" />
                   </div>
-                ))}
-                <div ref={bottomRef} />
-              </div>
+                  <span className="text-gray-400 text-xs font-mono mx-auto">moussab@portfolio:~</span>
+                </div>
 
-              {/* Input Line */}
-              <div className="flex items-center px-4 py-3 border-t border-gray-700 bg-gray-900">
-                <span className="text-green-400 font-mono text-sm mr-2">$ moussab</span>
-                <input
-                  ref={inputRef}
-                  value={input}
-                  onChange={(e) => setInput(e.target.value)}
-                  onKeyDown={handleKeyDown}
-                  className="flex-1 bg-transparent text-gray-200 font-mono text-sm outline-none caret-green-400"
-                  placeholder="help"
-                  spellCheck={false}
-                  autoComplete="off"
-                />
-              </div>
-            </motion.div>
+                {/* Output */}
+                <div
+                  className="flex-1 overflow-y-auto p-4 font-mono text-sm cursor-text"
+                  onClick={() => inputRef.current?.focus()}
+                >
+                  {lines.map((line, i) => (
+                    <div
+                      key={i}
+                      className={`leading-relaxed whitespace-pre-wrap ${line.type === 'error' ? 'text-red-400' :
+                          line.type === 'success' ? 'text-green-400' :
+                            line.type === 'input' ? 'text-blue-300' :
+                              'text-gray-300'
+                        }`}
+                    >
+                      {line.text}
+                    </div>
+                  ))}
+                  <div ref={bottomRef} />
+                </div>
+
+                {/* Input Line */}
+                <div className="flex items-center px-4 py-3 border-t border-gray-700 bg-gray-900">
+                  <span className="text-green-400 font-mono text-sm mr-2">$ moussab</span>
+                  <input
+                    ref={inputRef}
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    onKeyDown={handleKeyDown}
+                    className="flex-1 bg-transparent text-gray-200 font-mono text-sm outline-none caret-green-400"
+                    placeholder="help"
+                    spellCheck={false}
+                    autoComplete="off"
+                  />
+                </div>
+              </motion.div>
             </div>
           </>
         )}

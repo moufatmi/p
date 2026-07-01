@@ -10,7 +10,7 @@ const HeroV2: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
-          
+
           <div className="w-full lg:w-3/5">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -18,7 +18,7 @@ const HeroV2: React.FC = () => {
               transition={{ duration: 0.5 }}
             >
               <span className="inline-block bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-xs sm:text-sm font-semibold tracking-wide mb-6 uppercase">
-                Moussab Fatmi
+                Moussab Fatmi | مصعب فاطمي
               </span>
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight text-gray-900">
                 Systems Thinker. <br className="hidden sm:block" />
@@ -60,7 +60,7 @@ const HeroV2: React.FC = () => {
             </motion.div>
           </div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -70,16 +70,16 @@ const HeroV2: React.FC = () => {
               {/* Decorative background blobs behind the image */}
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-400 to-indigo-400 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] animate-float blur-xl opacity-40"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 to-teal-400 rounded-[70%_30%_30%_70%/70%_70%_30%_30%] animate-float-slow blur-xl opacity-30 mix-blend-multiply"></div>
-              
+
               {/* Profile Image Container */}
               <div className="absolute inset-2 bg-white rounded-full p-2 shadow-2xl overflow-hidden border border-gray-100 z-10">
-                <img 
-                  src="/profile.jpg" 
-                  alt="Moussab Fatmi" 
+                <img
+                  src="/profile.jpg"
+                  alt="Moussab Fatmi | مصعب فاطمي"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              
+
               {/* Floating Badges */}
               <div className="absolute -bottom-4 -left-8 bg-white p-4 rounded-2xl shadow-xl z-20 border border-gray-100 animate-float-fast flex flex-col gap-2">
                 <div className="flex items-center gap-3">

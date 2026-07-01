@@ -25,7 +25,7 @@ export const blogPosts: BlogPost[] = [
       - Hébergement sur place
       - Transport local
     `,
-    author: 'Moussab Fatmi',
+    author: 'Moussab Fatmi | مصعب فاطمي',
     date: '2024-03-20',
     readTime: '8 min',
     image: '/blog/hajj-guide.jpg',
@@ -49,7 +49,7 @@ export const blogPosts: BlogPost[] = [
       ## 3. Désert de Merzouga
       Une expérience inoubliable dans les dunes de sable...
     `,
-    author: 'Moussab Fatmi',
+    author: 'Moussab Fatmi | مصعب فاطمي',
     date: '2024-03-18',
     readTime: '6 min',
     image: '/blog/morocco-destinations.jpg',
@@ -79,7 +79,7 @@ export const blogPosts: BlogPost[] = [
       - Hébergements
       - Activités spéciales
     `,
-    author: 'Moussab Fatmi',
+    author: 'Moussab Fatmi | مصعب فاطمي',
     date: '2024-03-15',
     readTime: '5 min',
     image: '/blog/custom-travel.jpg',

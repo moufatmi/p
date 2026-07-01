@@ -20,10 +20,10 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <User className="h-7 w-7 sm:h-8 sm:w-8 text-blue-400" />
-              <span className="text-lg sm:text-2xl font-bold">Moussab Fatmi</span>
+              <span className="text-lg sm:text-2xl font-bold">Moussab Fatmi | مصعب فاطمي</span>
             </div>
             <p className="text-gray-300 text-xs sm:text-sm">
-              Conseillère en voyages passionnée avec 3 années d'expérience. 
+              Conseillère en voyages passionnée avec 3 années d'expérience.
               À la recherche de nouvelles opportunités dans une agence prestigieuse.
             </p>
             <div className="space-y-2 text-xs sm:text-sm">
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
             <div className="text-xs sm:text-sm text-gray-400 mb-2 md:mb-0">
-              <p>&copy; 2025 Moussab Fatmi. Portfolio professionnel.</p>
+              <p>&copy; 2025 Moussab Fatmi | مصعب فاطمي. Portfolio professionnel.</p>
             </div>
             <div className="text-xs sm:text-sm text-gray-400 text-center md:text-right">
               <p>Disponible pour nouvelles opportunités</p>

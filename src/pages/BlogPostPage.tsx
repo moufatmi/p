@@ -32,7 +32,7 @@ const BlogPostPage: React.FC = () => {
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Moussab Fatmi Travel Services",
+        "name": "Moussab Fatmi | مصعب فاطمي Travel Services",
         "@id": "https://moussab.com/#business"
       },
       "datePublished": post.date,
@@ -55,7 +55,7 @@ const BlogPostPage: React.FC = () => {
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
           {post.title}
         </h1>
-        
+
         <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-6">
           <div className="flex items-center gap-1">
             <User size={16} className="text-blue-600" />

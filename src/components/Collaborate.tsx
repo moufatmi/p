@@ -84,7 +84,7 @@ const Collaborate: React.FC = () => {
             </a>
           </div>
           <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Moussab Fatmi. All systems operational.
+            © {new Date().getFullYear()} Moussab Fatmi | مصعب فاطمي. All systems operational.
           </p>
         </div>
       </div>
