@@ -21,7 +21,7 @@ export type InsightPost = {
  */
 
 export const insights: InsightPost[] = [
-
+  
   {
     slug: 'how-i-built-ai-for-moroccan-farmers',
     title: 'How I Built an AI Assistant for Moroccan Farmers',
