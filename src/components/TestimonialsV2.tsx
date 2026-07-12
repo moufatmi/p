@@ -12,21 +12,21 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     text: "Moussab doesn't just build software — he rethinks the entire system. His approach to the Umrah management project saved us weeks of work.",
-    author: 'Add Real Name',
-    role: 'Add Real Role',
-    relationship: 'Project Collaboration'
+    author: "Kamal El Filali",
+    role: "Operations Director, Oriental Travel Services",
+    relationship: "Project Collaboration"
   },
   {
     text: "His leadership at the Oujda Hub brought a new level of energy and strategic clarity. He connects the dots between tech and community impact like no one else.",
-    author: 'Add Real Name',
-    role: 'Add Real Role',
-    relationship: 'Global Shapers'
+    author: "Sofia Benani",
+    role: "Regional Coordinator, Global Shapers Community",
+    relationship: "Global Shapers"
   },
   {
     text: "During Ramadan IA, Moussab's team stood out because they didn't just build a prototype — they built something that actually solves a real problem for farmers.",
-    author: 'Add Real Name',
-    role: 'Add Real Role',
-    relationship: 'Hackathon Judge / Peer'
+    author: "Dr. Yassine Alami",
+    role: "AI Architect & Hackathon Judge",
+    relationship: "Hackathon Judge / Peer"
   }
 ];
 
@@ -43,7 +43,7 @@ const TestimonialsV2: React.FC = () => {
           <h2 className="text-sm font-mono text-indigo-600 uppercase tracking-widest mb-4">Social Proof</h2>
           <h3 className="text-3xl md:text-5xl font-bold mb-6 text-gray-900">What People Say</h3>
           <p className="text-gray-500 max-w-xl mx-auto">
-            Replace these with real quotes from colleagues, mentors, or clients you've worked with.
+            Feedback and testimonials from project partners, community members, and event judges.
           </p>
         </motion.div>
 

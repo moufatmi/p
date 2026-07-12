@@ -73,7 +73,7 @@ const NowPage: React.FC = () => {
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="mt-1.5 w-2 h-2 bg-emerald-500 rounded-full shrink-0"></span>
-                  <span>Update this with what you're currently reading.</span>
+                  <span><strong>Thinking in Systems: A Primer</strong> by Donella H. Meadows — understanding system structures, feedback loops, and how to find leverage points for change.</span>
                 </li>
               </ul>
             </motion.div>
