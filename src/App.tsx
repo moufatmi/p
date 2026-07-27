@@ -30,6 +30,13 @@ const ScrollToTop = () => {
   return null;
 };
 
+const CardRedirect = () => {
+  useEffect(() => {
+    window.location.replace('/card.html');
+  }, []);
+  return null;
+};
+
 function App() {
   return (
     <Router>
@@ -58,6 +65,7 @@ function App() {
           <Route path="/insights" element={<InsightsPage />} />
           <Route path="/insights/:slug" element={<InsightArticle />} />
           <Route path="/m-vault" element={<InsightsAdminPage />} />
+          <Route path="/card" element={<CardRedirect />} />
         </Routes>
         <TerminalEasterEgg />
       </div>

@@ -72,7 +72,7 @@ const Collaborate: React.FC = () => {
         </div>
 
         <div className="mt-20 pt-10 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-6 justify-center md:justify-start">
             <a href="https://linkedin.com/in/moussabfatmi" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-600 transition-colors font-medium">
               LinkedIn
             </a>
@@ -81,6 +81,9 @@ const Collaborate: React.FC = () => {
             </a>
             <a href="mailto:contact@moussab.com" className="text-gray-500 hover:text-indigo-600 transition-colors font-medium">
               Email
+            </a>
+            <a href="/card.html" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-indigo-600 transition-colors font-medium">
+              Digital Card / البطاقة الرقمية
             </a>
           </div>
           <p className="text-sm text-gray-500">
