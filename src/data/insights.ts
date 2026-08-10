@@ -21,7 +21,34 @@ export type InsightPost = {
  */
 
 export const insights: InsightPost[] = [
-  
+  {
+    slug: 'architecting-al-safir-hajj-umrah-saas',
+    title: 'Architecting Al-Safir: Building an Offline-First Operating System for Hajj & Umrah Operations',
+    description: 'Inside the engineering and systems architecture of Al-Safir (safir.moussab.com) — solving operational chaos, auto-accommodation math, family accounting, and offline field logistics for travel agencies.',
+    date: '2026-08-10',
+    readTime: '6 min read',
+    tags: ['B2B SaaS', 'Systems Architecture', 'TravelTech', 'Offline-First'],
+    content: `
+      <h2>The Operational Nightmare of Religious Tourism</h2>
+      <p>Managing Hajj and Umrah programs for travel agencies in Morocco is a high-stakes, chaotic operation. Agencies handle hundreds of pilgrims, tight flight schedules (PNRs), complex passport expiration deadlines, family groupings, and hotel room math across Mecca and Medina.</p>
+      <p>A single expired passport or misplaced visa can halt an entire group. Yet, most agencies still rely on fragmented WhatsApp messages, sticky notes, and fragile Excel sheets.</p>
+
+      <h2>Flipping the Paradigm: Al-Safir (السفير)</h2>
+      <p>I built <a href="https://safir.moussab.com" target="_blank" rel="noopener noreferrer"><strong>Al-Safir (safir.moussab.com)</strong></a> to solve this end-to-end. Rather than creating another generic CRM, I designed a specialized B2B operating system tailored to the real-world constraints of Moroccan travel agencies.</p>
+
+      <h2>Key Architectural Breakthroughs</h2>
+      <ul>
+        <li><strong>Offline-First PWA Field Headcount:</strong> Guides in Saudi Arabia operate under poor connectivity during peak pilgrimage days. The field headcount tool works completely offline using Local Storage PWA sync, ensuring zero data loss.</li>
+        <li><strong>Automated Accommodation Math:</strong> Algorithmic room assignment based on gender, room capacities, and family constraints — reducing hours of manual hotel room planning to seconds.</li>
+        <li><strong>Unified Family Ledgers:</strong> Grouping family members under a "Head of Household" to provide consolidated financial statements (total due, paid, remaining balance).</li>
+        <li><strong>Flight PNR Margin Tracker:</strong> Direct profit tracking per flight ticket purchase and sale, giving agency owners real-time financial visibility.</li>
+      </ul>
+
+      <h2>The Systems Thinking Takeaway</h2>
+      <p>Software is only as good as its understanding of ground reality. By designing around the actual friction points of field guides and agency staff, Al-Safir saves over 480 hours of administrative work per season and eliminates operational risk.</p>
+      <p>Explore the live platform at <a href="https://safir.moussab.com" target="_blank" rel="noopener noreferrer">safir.moussab.com</a>.</p>
+    `
+  },
   {
     slug: 'how-i-built-ai-for-moroccan-farmers',
     title: 'How I Built an AI Assistant for Moroccan Farmers',

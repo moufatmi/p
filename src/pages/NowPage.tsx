@@ -4,7 +4,7 @@ import { Calendar, BookOpen, Cpu, Rocket } from 'lucide-react';
 
 const NowPage: React.FC = () => {
   // Last updated date — change this manually when you update the page
-  const lastUpdated = 'June 2025';
+  const lastUpdated = 'August 2026';
 
   return (
     <div className="min-h-screen bg-gray-50 pt-24 pb-16">
@@ -46,6 +46,12 @@ const NowPage: React.FC = () => {
                 <h2 className="text-xl font-bold text-gray-900">🔨 Currently Building</h2>
               </div>
               <ul className="space-y-4 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 w-2 h-2 bg-blue-500 rounded-full shrink-0"></span>
+                  <span>
+                    <strong>Al-Safir (السفير)</strong> — Building and scaling a specialized Hajj & Umrah agency management B2B SaaS platform (<a href="https://safir.moussab.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline font-medium">safir.moussab.com</a>) featuring offline-first PWA field headcount, auto-rooming algorithms, and family financial ledgers.
+                  </span>
+                </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1.5 w-2 h-2 bg-blue-500 rounded-full shrink-0"></span>
                   <span><strong>Al-Khabir AI</strong> — Iterating on the voice interface and expanding the agricultural data sources for broader Moroccan coverage.</span>
