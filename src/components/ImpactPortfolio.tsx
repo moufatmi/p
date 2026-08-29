@@ -1,18 +1,36 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sprout, ShoppingCart, Briefcase, Compass, ExternalLink } from 'lucide-react';
+import { Sprout, ShoppingCart, Briefcase, Compass, ExternalLink, Gamepad2 } from 'lucide-react';
 
 const ImpactPortfolio: React.FC = () => {
   const projects = [
+    {
+      id: 'hexagon',
+      icon: Gamepad2,
+      title: '0 Hexagon Studio',
+      subtitle: 'Live Social Entertainment Platform',
+      category: 'Entrepreneurship & Product Engineering',
+      role: 'Founder & Full-Stack Systems Builder',
+      meta: 'Oujda, Morocco | Aug 2026 – Present',
+      problem: 'Founded and engineered a live social deduction entertainment experience (Mafia/Murder Mystery events) designed to transition into a recurring gaming community and tournament model.',
+      solution: 'Designed and deployed a high-converting single-page booking engine (Next.js, Tailwind CSS, Supabase) with real-time seat availability tracking, automated capacity limits, seamless WhatsApp confirmation flow, and a dedicated admin dashboard for manifest tracking, attendee validation, and CSV export.',
+      impact: 'Directed brand identity, print asset production (tickets, staff passes), and on-ground logistics while structuring an ecosystem transition path towards custom game IP (Hexagon Originals), corporate team-building events, and player memberships.',
+      liveUrl: 'https://mafia.moussab.com',
+      liveUrlText: 'Visit Hexagon Platform',
+      badge: '🔥 Live Venture',
+      tags: ['Entrepreneurship', 'Product Engineering', 'Next.js', 'Supabase', 'Admin Dashboard', 'Live Operations']
+    },
     {
       id: 'safir',
       icon: Compass,
       title: 'Al-Safir (السفير)',
       subtitle: 'Hajj & Umrah Agency SaaS Platform',
+      category: 'Product Engineering & B2B SaaS',
       problem: 'Moroccan travel agencies face extreme operational friction during peak seasons: passport expiration tracking, room accommodation math, flight PNR margins, and offline field headcount in Mecca/Medina.',
       solution: 'Architected & built an end-to-end B2B SaaS platform featuring an offline-first PWA for field guides, automated room assignment algorithms, unified family financial ledgers, and automated passport alert systems.',
       impact: 'Digitized end-to-end agency workflows, saving 480+ operational hours per season and eliminating critical document expiration oversights.',
       liveUrl: 'https://safir.moussab.com',
+      liveUrlText: 'Visit Safir Platform',
       badge: '🚀 Live Production SaaS',
       tags: ['B2B SaaS', 'PWA (Offline-First)', 'TravelTech', 'Automation', 'Systems Design']
     },
@@ -21,6 +39,7 @@ const ImpactPortfolio: React.FC = () => {
       icon: Sprout,
       title: 'Al-Khabir AI',
       subtitle: 'Voice-First Agri-Tech Intelligence',
+      category: 'Civic Tech & AI Engineering',
       problem: 'Farmers in rural Morocco lack accessible, localized agricultural data to make informed crop and weather decisions.',
       solution: 'Developed a voice-activated Darija-supported agri-tech solution providing targeted, hyper-local intelligence directly to farmers.',
       impact: 'Democratizing data access for rural communities without requiring high tech-literacy.',
@@ -32,6 +51,7 @@ const ImpactPortfolio: React.FC = () => {
       icon: ShoppingCart,
       title: 'Atlas Source',
       subtitle: 'E-Commerce & Digital Export',
+      category: 'Digital Systems & Commerce',
       problem: 'Moroccan artisans struggle to reach international markets efficiently and capture global value.',
       solution: 'Established an international e-commerce setup focused on Moroccan handicrafts, heavily optimizing for digital SEO and cross-border logistics.',
       impact: 'Bridged the gap between local craftsmanship and global demand through targeted digital presence.',
@@ -42,6 +62,7 @@ const ImpactPortfolio: React.FC = () => {
       icon: Briefcase,
       title: 'Strategic Talent Positioning',
       subtitle: 'Professional Roadmapping & Systems',
+      category: 'Strategic Management & Systems',
       problem: 'Competitive sports talent lacking structured professional roadmaps and digital scouting presence.',
       solution: 'Acted as strategic manager: designed professional training roadmaps, career scouting strategies, and digital growth portfolios.',
       impact: 'Elevated professional positioning from local talent to a structured, scoutable asset.',
@@ -86,20 +107,28 @@ const ImpactPortfolio: React.FC = () => {
                 <div className="flex items-center justify-between gap-4 mb-6 relative z-10">
                   <div className="flex items-center gap-4">
                     <div className={`p-3 rounded-xl border shadow-sm ${
-                      project.liveUrl ? 'bg-indigo-50 text-indigo-600 border-indigo-100' : 'bg-gray-50 text-emerald-600 border-gray-200'
+                      project.liveUrl || project.id === 'hexagon' ? 'bg-indigo-50 text-indigo-600 border-indigo-100' : 'bg-gray-50 text-emerald-600 border-gray-200'
                     }`}>
                       <project.icon className="w-6 h-6" />
                     </div>
                     <div>
+                      {project.category && (
+                        <span className="text-[11px] font-mono text-indigo-600 uppercase font-semibold block tracking-wider mb-0.5">
+                          {project.category}
+                        </span>
+                      )}
                       <h4 className="text-2xl font-bold text-gray-900">{project.title}</h4>
                       {project.subtitle && (
                         <p className="text-xs font-mono text-gray-500">{project.subtitle}</p>
+                      )}
+                      {project.meta && (
+                        <p className="text-[11px] text-gray-400 font-mono mt-0.5">{project.meta}</p>
                       )}
                     </div>
                   </div>
 
                   {project.badge && (
-                    <span className="px-3 py-1 bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold rounded-full shadow-xs">
+                    <span className="px-3 py-1 bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs font-semibold rounded-full shadow-xs shrink-0">
                       {project.badge}
                     </span>
                   )}
@@ -143,7 +172,7 @@ const ImpactPortfolio: React.FC = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-xs font-semibold transition-all shadow-md shadow-indigo-100 hover:-translate-y-0.5 shrink-0"
                   >
-                    <span>Visit Safir Platform</span>
+                    <span>{project.liveUrlText || `Visit ${project.title}`}</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 )}

@@ -49,6 +49,12 @@ const NowPage: React.FC = () => {
                 <li className="flex items-start gap-3">
                   <span className="mt-1.5 w-2 h-2 bg-blue-500 rounded-full shrink-0"></span>
                   <span>
+                    <strong>0 Hexagon Studio</strong> — Founder & Full-Stack Systems Builder of a live social deduction entertainment platform (<a href="https://mafia.moussab.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline font-medium">mafia.moussab.com</a>) for Mafia/Murder Mystery events in Oujda, Morocco. Engineering single-page Next.js/Supabase booking flows, automated capacity controls, real-time admin manifests, and ecosystem expansion into custom game IP and corporate memberships.
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 w-2 h-2 bg-blue-500 rounded-full shrink-0"></span>
+                  <span>
                     <strong>Al-Safir (السفير)</strong> — Building and scaling a specialized Hajj & Umrah agency management B2B SaaS platform (<a href="https://safir.moussab.com" target="_blank" rel="noopener noreferrer" className="text-indigo-600 underline font-medium">safir.moussab.com</a>) featuring offline-first PWA field headcount, auto-rooming algorithms, and family financial ledgers.
                   </span>
                 </li>
