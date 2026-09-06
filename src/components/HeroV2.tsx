@@ -74,7 +74,7 @@ const HeroV2: React.FC = () => {
               {/* Profile Image Container */}
               <div className="absolute inset-2 bg-white rounded-full p-2 shadow-2xl overflow-hidden border border-gray-100 z-10">
                 <img
-                  src="/profile.jpg"
+                  src="/main-pp.jpeg"
                   alt="Moussab Fatmi | مصعب فاطمي"
                   className="w-full h-full object-cover rounded-full"
                 />
@@ -82,6 +82,10 @@ const HeroV2: React.FC = () => {
 
               {/* Floating Badges */}
               <div className="absolute -bottom-4 -left-8 bg-white p-4 rounded-2xl shadow-xl z-20 border border-gray-100 animate-float-fast flex flex-col gap-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-rose-500 rounded-full animate-pulse"></div>
+                  <span className="text-xs font-bold text-gray-800">Campus Director, Hult Prize (UMI)</span>
+                </div>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
                   <span className="text-xs font-bold text-gray-800">Global Shaper (WEF)</span>

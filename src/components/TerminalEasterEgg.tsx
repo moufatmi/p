@@ -31,6 +31,9 @@ const COMMANDS: Record<string, () => OutputLine[]> = {
   ],
   '--shaper': () => [
     { text: '> Community Leadership:', type: 'success' },
+    { text: '  [Hult Prize Foundation]', type: 'output' },
+    { text: '  • Campus Director @ Université Moulay Ismaïl (UMI)', type: 'output' },
+    { text: '  • Leading social entrepreneurship & incubating 10+ student startups', type: 'output' },
     { text: '  [World Economic Forum]', type: 'output' },
     { text: '  • Active Curator for Oujda Hub', type: 'output' },
     { text: '  • Driving dialogue, action, and local socio-economic impact', type: 'output' },

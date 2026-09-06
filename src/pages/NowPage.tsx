@@ -106,7 +106,11 @@ const NowPage: React.FC = () => {
               <ul className="space-y-4 text-gray-700">
                 <li className="flex items-start gap-3">
                   <span className="mt-1.5 w-2 h-2 bg-purple-500 rounded-full shrink-0"></span>
-                  <span>Expanding the Global Shapers Oujda Hub initiatives and driving the 2025 community action plan.</span>
+                  <span>Directing the Hult Prize On-Campus Program as Campus Director at Université Moulay Ismaïl (UMI), organizing workshops and guiding 10+ student startup teams in social entrepreneurship.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 w-2 h-2 bg-purple-500 rounded-full shrink-0"></span>
+                  <span>Expanding the Global Shapers Oujda Hub initiatives and driving the community action plan.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1.5 w-2 h-2 bg-purple-500 rounded-full shrink-0"></span>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Globe, Users, Lightbulb } from 'lucide-react';
+import { Globe, Users, Lightbulb, Trophy } from 'lucide-react';
 
 const GlobalFootprint: React.FC = () => {
   return (
@@ -15,6 +15,15 @@ const GlobalFootprint: React.FC = () => {
             className="lg:w-1/2"
           >
             <div className="flex flex-col gap-6 mb-8">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-rose-100 flex items-center justify-center border border-rose-200 shadow-sm">
+                  <Trophy className="w-6 h-6 text-rose-600" />
+                </div>
+                <div>
+                  <h2 className="text-sm font-mono text-rose-600 uppercase tracking-widest">Hult Prize Foundation</h2>
+                  <h3 className="text-xl font-bold text-gray-900">Campus Director, Moulay Ismaïl University</h3>
+                </div>
+              </div>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center border border-blue-200 shadow-sm">
                   <Globe className="w-6 h-6 text-blue-600" />
@@ -43,10 +52,19 @@ const GlobalFootprint: React.FC = () => {
             </h4>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              My work extends far beyond code. As a Curator for the World Economic Forum's Oujda Hub and the Oriental Region Ambassador for the "Les Citoyens" association, I manage and drive community-driven socio-economic initiatives, translating high-level strategies into ground-level impact.
+              My work extends far beyond code. As Campus Director for the Hult Prize at Moulay Ismaïl University, Curator for the WEF Oujda Hub, and Ambassador for "Les Citoyens", I lead youth programs, incubate social enterprise ideas, and drive ground-level impact.
             </p>
 
             <div className="space-y-6">
+              <div className="flex gap-4">
+                <div className="shrink-0 mt-1">
+                  <Trophy className="w-5 h-5 text-rose-600" />
+                </div>
+                <div>
+                  <h5 className="font-bold text-gray-900 text-lg">Campus Director, Hult Prize (UMI)</h5>
+                  <p className="text-gray-600">Directing the On-Campus Program at Université Moulay Ismaïl, recruiting and mentoring 10+ student startup teams to build impact-driven social ventures competing for the $1M global prize.</p>
+                </div>
+              </div>
               <div className="flex gap-4">
                 <div className="shrink-0 mt-1">
                   <Users className="w-5 h-5 text-blue-600" />
